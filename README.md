@@ -1,8 +1,8 @@
 # Portfolio Project Setup Documentation
 
-## Objective
+## Hello! I'm Fanny
 
-Hello! I'm Fanny and this repository was created as part of a portfolio project assignment to demonstrate the ability to follow technical instructions, troubleshoot setup issues, and document the workflow clearly and professionally.
+This repository was created as part of a portfolio project assignment to demonstrate the ability to follow technical instructions, troubleshoot setup issues, and document the workflow clearly and professionally.
 
 ## Tools Installed
 
