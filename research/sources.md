@@ -39,6 +39,27 @@ The shortlist was not built from whoever is most famous. I tried to bias toward 
 - Jason Barnard: `research/linkedin-posts/jason-barnard-ai-entity-posts.md`
 - Helene Jelenc: `research/linkedin-posts/helene-jelenc-ai-visibility-posts.md`
 
+## Supporting Web, Tool, And App References
+
+This file originally focused only on the final 10 selected experts. To make the research trail clearer, I am also listing the supporting tools and web references that helped me collect, access, or organize the material.
+
+| Type | Link / Path | Why It Was Used |
+| --- | --- | --- |
+| Script | `get_transcript.py` | Local Python script used to fetch YouTube transcripts and save them into `research/youtube-transcripts/`. |
+| Library / API method | `youtube-transcript-api` | Main transcript collection method used for the YouTube source files. |
+| App / IDE | `Cursor IDE` | Main working environment for repository organization, note-taking, and running collection commands. |
+| App / assistant | `Claude Code` | Used for troubleshooting, documentation support, and workflow experimentation inside the project. |
+| App / assistant | `Codex` | Used for repo edits, structure cleanup, and documentation updates during the assignment. |
+| Version control | `Git` and `GitHub` | Used to manage the repository, preserve progress, and push changes regularly instead of in one final commit. |
+| Environment | `WSL` | Used for terminal-based setup, model configuration attempts, and troubleshooting. |
+| App-entry reference | https://www.youtube.com/watch?v=1wP97Rd62cg&t=346s | Tutorial used to figure out the Codex login flow through **Open Codex Sidebar** when I did not yet know how to access it correctly. |
+| LinkedIn profile entry point | https://www.linkedin.com/in/lilyraynyc/ | Profile used to access and review Lily Ray's recent posts before choosing the final source. |
+| LinkedIn profile entry point | https://www.linkedin.com/in/jasonmbarnard/ | Profile used to access and review Jason Barnard's recent posts before choosing the final source. |
+| LinkedIn profile entry point | https://si.linkedin.com/in/helenejelenc | Profile used to access and review Helene Jelenc's recent posts before choosing the final source. |
+| Supporting cross-source link | https://www.youtube.com/watch?v=JkEjVLnNzBU | Video interview linked from Helene Jelenc's LinkedIn post; used as an additional long-form source connected to the LinkedIn notes. |
+
+Some app access points in the workflow did not come from public URLs. For example, `Claude Code` was installed through `Cursor Extensions`, and `Codex` was opened through **Open Codex Sidebar** inside Cursor. I am noting that here so the workflow is visible even where the entry point was inside the app rather than on a webpage.
+
 ## Why This Set Feels Strong
 
 The final set has a useful internal balance:
