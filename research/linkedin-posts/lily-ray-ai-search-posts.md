@@ -4,9 +4,7 @@ Profile: https://www.linkedin.com/in/lilyraynyc/
 
 I picked Lily Ray because she is one of the strongest reality-check voices in AI search. What I like about her recent posts is that she does not talk about AI visibility like a hype machine. She keeps bringing the discussion back to measurement problems, trust, spam, and what is actually changing inside Google.
 
-## Post 1
-
-Title: Don't get too excited about AI Overview & AI Mode data appearing in GSC
+## Post 1 - Don't get too excited about AI Overview & AI Mode data appearing in GSC
 
 URL: https://www.linkedin.com/posts/lily-ray-44755615_ai-aimode-seo-activity-7340792082837450752-psb_
 
@@ -21,9 +19,7 @@ What stood out to me:
 How this helps my future playbook:
 This gives me a warning not to build an AI-powered SEO content system around bad measurement. If I later create a playbook, I want a section on "false confidence metrics" so I do not mistake noisy reporting for real visibility gains.
 
-## Post 2
-
-Title: Debunking The Myth That Search Is Dying
+## Post 2 - Debunking The Myth That Search Is Dying
 
 URL: https://www.linkedin.com/posts/lily-ray-44755615_debunking-the-myth-that-search-is-dying-activity-7419834269159718914-_GgS
 
