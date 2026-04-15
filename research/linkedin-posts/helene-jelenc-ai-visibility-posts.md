@@ -13,9 +13,7 @@ Transcript file:
 YouTube transcript source:
 https://www.youtube.com/watch?v=JkEjVLnNzBU
 
-## Post 1
-
-Title: How to work with AI visibility - findings from AI test
+## Post 1 - How to work with AI visibility - findings from AI test
 
 URL: https://www.linkedin.com/posts/flow-agency_how-to-work-with-ai-visibility-findings-activity-7436712423350304768-fCbN
 
@@ -30,9 +28,7 @@ What stood out to me:
 How this helps my future playbook:
 This gives me a more advanced content production idea. Instead of only making blog posts, I should think about a multi-format system where pages, videos, and brand mentions work together.
 
-## Post 2
-
-Title: More buyers are turning to LLMs to research software, validate vendors, and make purchase decisions
+## Post 2 - More buyers are turning to LLMs to research software, validate vendors, and make purchase decisions
 
 URL: https://www.linkedin.com/posts/flow-agency_more-buyers-are-turning-to-llms-to-research-activity-7401223526130536449-Wcya
 
