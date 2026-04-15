@@ -2,7 +2,7 @@
 
 One of the clearest examples of my technical troubleshooting in this project was the YouTube transcript workflow.
 
-At first, I tried to install `youtube-transcript-api` inside `Git Bash`, but `pip` was not recognized there. To solve that, I switched terminals inside Cursor IDE and used `Command Prompt` / `PowerShell` instead. From there, I checked Python, installed the package properly, and verified that it was available.
+At first, I tried to install `youtube-transcript-api` inside `Git Bash`, but `pip` was not recognized there. To solve that, I switched terminals inside Cursor IDE and used `Command Prompt` instead. From there, I checked Python, installed the package properly, and verified that it was available.
 
 I then created `get_transcript.py` in the repo and tested it from:
 
