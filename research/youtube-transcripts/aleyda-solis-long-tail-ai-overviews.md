@@ -1,7 +1,9 @@
 ﻿# Focus on the long tail
 
 Speaker: Aleyda Solis
+
 URL: https://www.youtube.com/watch?v=8vfoSMqka3A
+
 Collected: 2026-04-15
 
 ## Full Transcript
