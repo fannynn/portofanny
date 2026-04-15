@@ -1,7 +1,9 @@
 ﻿# The key to success in SEO for 2025 is automation
 
 Speaker: Kevin Indig
+
 URL: https://www.youtube.com/watch?v=9Wdp_mhGgRQ
+
 Collected: 2026-04-15
 
 ## Full Transcript
