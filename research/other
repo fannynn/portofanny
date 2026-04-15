@@ -58,11 +58,68 @@ I also worked with a custom AI setup:
 - I used my own `SumoPod` API key
 - because that workflow was more manual, I installed `WSL`
 - I used the `WSL` terminal inside Cursor IDE
-- I configured SumoPod manually there
+- I configured SumoPod-related environment variables manually there
 - I installed Claude Code manually through the terminal
-- I configured the model manually as `Sonnet 4.6`
+- I tested manual model configuration for `claude-sonnet-4-6`
 
 I also used `Codex` for many of the fixes when I still had unresolved terminal issues. That was especially helpful when I got stuck on setup problems, file structure issues, transcript collection workflow, and Git-related confusion.
+
+## Claude Code + WSL + SumoPod Troubleshooting Example
+
+Another useful technical issue I worked through involved trying to use `Claude Code` inside `Cursor IDE` through `WSL`, while preferring my own `SumoPod` API key instead of the direct Claude sidebar login flow.
+
+Here is what I completed first:
+
+- upgraded `WSL` to version `2`
+- installed `Node.js` and `Claude Code` inside `WSL`
+- confirmed that the `claude` CLI launches from the `WSL` terminal
+- exported custom environment variables:
+  - `ANTHROPIC_BASE_URL=https://ai.sumopod.com`
+  - `ANTHROPIC_API_KEY=...`
+  - `ANTHROPIC_MODEL=claude-sonnet-4-6`
+- checked the `SumoPod` dashboard to confirm that `claude-sonnet-4-6` was listed as available
+
+The remaining issue was that `/init` in Claude Code still failed with a model-access error, even after selecting the same model again through `/model`.
+
+That gave me a more realistic debugging problem to investigate, including questions such as:
+
+- whether the endpoint was truly compatible with the API format `Claude Code` expects
+- whether `Claude Code` supports this exact environment-variable setup
+- whether the `SumoPod` endpoint supports the expected Anthropic-style `/v1/messages` flow
+- whether there was a model naming, access, or protocol mismatch even though the model appeared in the dashboard
+- whether running through `Cursor` + `WSL` introduced an extra integration issue
+
+I think this is worth documenting because it shows that my work was not limited to straightforward installation. It also involved diagnosing compatibility problems between developer tools, terminal environments, and third-party API providers, even when the setup looked correct on the surface.
+
+## Transcript API Troubleshooting Example
+
+One of the clearest examples of my technical troubleshooting in this project was the YouTube transcript workflow.
+
+At first, I tried to install `youtube-transcript-api` inside `Git Bash`, but `pip` was not recognized there. To solve that, I switched terminals inside Cursor IDE and used `Command Prompt` / `PowerShell` instead. From there, I checked Python, installed the package properly, and verified that it was available.
+
+I then created `get_transcript.py` in the repo and tested it from:
+
+- `C:\Users\fanny\portofanny-2\portofanny`
+
+When I first ran the script, it failed because the version of `youtube-transcript-api` I installed no longer supported the older `get_transcript` method I had been trying to use.
+
+To fix that, I updated the script logic to use:
+
+- `YouTubeTranscriptApi()`
+- `.fetch(video_id)`
+- `entry.text`
+
+instead of the older pattern.
+
+This showed me how to:
+
+- switch between terminals depending on the tool
+- work with Python packages from the terminal
+- troubleshoot version differences in an API library
+- test the script again after updating the code
+- use the script to save transcript output directly into my research folder
+
+That part of the workflow was especially useful because it moved the project from simple note-taking into actual API and terminal-based problem solving.
 
 ## What I Have Organized So Far
 

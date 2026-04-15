@@ -134,11 +134,13 @@ I also worked with a more custom AI setup:
 - I used my own `SumoPod` API key
 - because that setup was more manual, I installed `WSL`
 - I used the `WSL` terminal inside Cursor IDE
-- I configured SumoPod manually there
+- I configured SumoPod-related environment variables manually there
 - I installed Claude Code manually through the terminal
-- I configured the model manually as `Sonnet 4.6`
+- I tested the model configuration manually as `claude-sonnet-4-6`
 
-This part of the project shows that I was not only collecting notes manually, but also learning how to work with APIs, terminal-based setup, and AI tooling in a more technical way.
+One useful troubleshooting case in this setup was that `Claude Code` would open from `WSL`, but `/init` still failed with a model-access error even after I selected `claude-sonnet-4-6` again through `/model`. That pushed me to think beyond basic installation and look at possible causes such as API compatibility, endpoint format, environment-variable support, and `Cursor` + `WSL` integration behavior.
+
+This part of the project shows that I was not only collecting notes manually, but also learning how to work with APIs, terminal-based setup, and AI tooling in a more technical way, including cases where the problem was not fully solved yet and had to be documented honestly as an active debugging issue.
 
 ## Why This Material Can Support a Real Playbook Later
 
