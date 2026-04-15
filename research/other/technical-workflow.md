@@ -1,4 +1,4 @@
-# Technical Workflow I Used
+# Technical Workflow I Used 
 
 This project was not only manual note-taking. It also included transcript collection, repo organization, troubleshooting, and some setup work to make the tools usable in practice.
 
