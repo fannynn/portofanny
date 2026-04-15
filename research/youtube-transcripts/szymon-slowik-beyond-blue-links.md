@@ -1,7 +1,9 @@
 ﻿# SEO in 2025: Beyond Blue Links
 
 Speaker: Szymon Slowik
+
 URL: https://www.youtube.com/watch?v=cH-CWpQTyeQ
+
 Collected: 2026-04-15
 
 ## Full Transcript
