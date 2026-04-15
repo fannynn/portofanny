@@ -1,6 +1,6 @@
 # AI-Powered SEO Content Production Research
 
-This repository contains my research project for the 100Hires junior growth marketing assignment. I chose topic `#3 AI-powered SEO content production` because it sits at the intersection of SEO, LLM visibility, content systems, and B2B SaaS buyer behavior.
+This repository contains my research project about AI-powered SEO content production because it sits at the intersection of SEO, LLM visibility, content systems, and B2B SaaS buyer behavior.
 
 The goal was not to dump links into folders. I wanted to build a source base strong enough to support a real playbook later, especially around AI visibility, entity understanding, commercial-intent content, and the shift from classic rankings to citation and recommendation systems.
 
