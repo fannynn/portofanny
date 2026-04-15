@@ -78,7 +78,7 @@ Inside `/research`, I organized the project into:
 - `research/sources.md` for the ranked source list and research direction
 - `research/linkedin-posts/` for recent LinkedIn post notes from selected experts
 - `research/youtube-transcripts/` for video transcripts organized by video
-- `research/other` for extra supporting research notes
+- `research/other/` for extra supporting research notes split into separate topic files
 
 So far, I collected:
 
