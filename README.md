@@ -1,13 +1,8 @@
 # Portfolio Project Setup Documentation
 
-## Hello! I'm Fanny ;)
+This repository began as a portfolio project assignment focused on setup, troubleshooting, and documentation. As the work developed, it expanded into a structured research repository on `AI-powered SEO content production`, with a specific focus on AI visibility, entity understanding, recommendation systems, and B2B SaaS search behavior.
 
-This repository started as a portfolio project assignment to show that I can follow technical instructions, troubleshoot setup problems, and document the process clearly. It later became something more specific: a research repository around `AI-powered SEO content production`, with a focus on AI visibility, entity understanding, recommendation systems, and B2B SaaS search behavior.
-
-So this README is intentionally both things:
-
-- the original setup and troubleshooting story
-- the updated research summary showing what I collected and why these experts were chosen
+This README reflects both parts of that process: the original technical setup work and the later research update built on top of it. The goal was not to collect a large volume of generic SEO material, but to assemble a smaller, higher-signal set of practitioner sources strong enough to support a real playbook later.
 
 ## Tools Installed
 
@@ -70,13 +65,15 @@ After researching online, I discovered that Git was not installed on my system. 
 
 This setup process strengthened my confidence in troubleshooting technical problems independently. I used Google and YouTube strategically to find accurate solutions, adapted quickly to unfamiliar tools and workflows, and stayed persistent through each issue until the environment was fully configured.
 
-That same mindset carried into the research phase of this repository. The project stopped being only about installing tools and became a more niche research build around how SEO content production is changing when discovery is influenced by LLMs, AI Overviews, recommendation systems, and entity-level understanding.
+The same problem-solving approach carried into the next phase of the project. Once the environment was working, the repository evolved from a setup exercise into a research project examining how SEO content production changes when discovery is shaped by LLMs, AI Overviews, recommendation systems, and entity-level understanding.
 
 ---
 
 ## Research Update: AI-Powered SEO Content Production
 
-After the setup was complete, I used the repo to collect research for my chosen topic, which is AI-powered SEO content production.
+After the setup was complete, I used the repo to collect research for topic `#3 AI-powered SEO content production`.
+
+The collection was designed around the assignment requirements: identify 10 strong experts, collect recent content through technical workflows, organize the material clearly in the repository, and document why the final set is worth using.
 
 I did not want this repository to become a generic folder of SEO links. The goal was to build a source base that could support a future playbook, especially around:
 
@@ -90,8 +87,8 @@ I did not want this repository to become a generic folder of SEO links. The goal
 Inside [`research/`](research/) I organized the material into:
 
 - [`research/sources.md`](research/sources.md) as the final source index with 10 selected experts, links, dates, and reasons for choosing them
-- [`research/linkedin-posts/`](research/linkedin-posts/) for recent LinkedIn post notes and takeaways
-- [`research/youtube-transcripts/`](research/youtube-transcripts/) for long-form transcript-based research
+- [`research/linkedin-posts/`](research/linkedin-posts/) for recent LinkedIn post notes collected manually and organized by author
+- [`research/youtube-transcripts/`](research/youtube-transcripts/) for long-form transcript-based research collected through API-based workflow
 - [`research/other/`](research/other/) for workflow notes, troubleshooting context, and supporting documentation
 
 The collection currently includes:
@@ -100,6 +97,15 @@ The collection currently includes:
 - 8 YouTube transcript files for deeper long-form insights
 - 3 LinkedIn post collections for fresher industry observations
 - supporting notes on source selection, repo organization, and technical workflow
+
+## Repository Structure
+
+The repository was organized to make the research usable, not just stored:
+
+- `research/sources.md` works as the main decision layer, showing who was selected, when the source was published, where it came from, and why it matters
+- `research/linkedin-posts/` holds short-form signals, recent opinions, and tactical observations by author
+- `research/youtube-transcripts/` holds longer-form material with enough depth to extract frameworks, workflows, and reasoning
+- `research/other/` captures process documentation, troubleshooting, and supporting context so the repo shows how the research was built, not only the final output
 
 ## Why I Chose These Experts
 
@@ -136,6 +142,19 @@ The recurring themes across the materials are:
 
 That is why the expert list in [`research/sources.md`](research/sources.md) is intentionally selective. I was looking for people whose ideas could later turn into a real workflow, not just a trend summary.
 
+## Why The Material Is Strong Enough For A Real Playbook
+
+This repository is built to support future strategic use, not just to complete the collection task.
+
+The material is strong enough for a later playbook because it combines:
+
+- recent short-form content for current observations and shifts in the field
+- long-form transcripts for frameworks, reasoning, and process detail
+- a balanced expert mix across AI visibility, entity SEO, measurement, content systems, and B2B SaaS search behavior
+- annotations and synthesis that explain why each source matters instead of treating all sources as equally useful
+
+The result is a smaller but more intentional source base. That matters for this topic, because 10 high-signal experts with distinct strengths are more useful than a much larger list of repetitive SEO commentary.
+
 ## Technical Workflow Behind The Research
 
 This project also became more technical than a normal note-taking task.
@@ -149,7 +168,13 @@ I used:
 - `WSL`
 - `Claude Code` and `Codex`
 
-The transcript collection workflow is reflected in [`get_transcript.py`](get_transcript.py), which I used to fetch YouTube transcripts and save them into the repo. I also kept supporting notes in `research/other/` because the research process included setup friction, tool debugging, and workflow decisions, not just content collection.
+The transcript collection workflow is reflected in [`get_transcript.py`](get_transcript.py), which I used to fetch YouTube transcripts and save them into the repo. LinkedIn material was collected and organized manually by author. I also kept supporting notes in `research/other/` because the research process included setup friction, tool debugging, and workflow decisions, not just content collection.
+
+This part of the project demonstrates more than topic research alone. It also shows the ability to work with APIs, troubleshoot tooling, manage files systematically, and turn raw source collection into a structured repository.
+
+## Repo Workflow
+
+I committed and pushed throughout the project instead of waiting until the end for one large upload. That mattered because the repository kept changing as I collected sources, pulled transcripts, refined the shortlist, reorganized folders, and improved the documentation.
 
 ## Quick Navigation
 
