@@ -1,7 +1,9 @@
 ﻿# The New SEO: How to Win in ChatGPT, Gemini, and AI Search
 
 Speaker: Steve Toth
+
 URL: https://www.youtube.com/watch?v=FMPaKBesM6w
+
 Collected: 2026-04-15
 
 ## Full Transcript
