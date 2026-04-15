@@ -1,4 +1,4 @@
-# Claude Code + WSL + SumoPod Troubleshooting Example
+# Claude Code + WSL + SumoPod Troubleshooting Example 
 
 Another technical issue I worked through came up while trying to run `Claude Code` inside `Cursor IDE` through `WSL`, using my own `SumoPod` API key instead of the standard Claude sidebar login flow.
 
