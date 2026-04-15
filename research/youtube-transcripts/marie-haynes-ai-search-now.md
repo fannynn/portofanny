@@ -1,7 +1,9 @@
 ﻿# AI & Search: What SEOs Need to Know (and Do) Right Now
 
 Speaker: Marie Haynes
+
 URL: https://www.youtube.com/watch?v=mbXmbfX6FVo
+
 Collected: 2026-04-15
 
 ## Full Transcript
