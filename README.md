@@ -71,7 +71,7 @@ The same problem-solving approach carried into the next phase of the project. On
 
 ## Research Update: AI-Powered SEO Content Production
 
-After the setup was complete, I used the repo to collect research for topic `#3 AI-powered SEO content production`.
+After the setup was complete, I used the repo to collect research for my chosen topic : `AI-powered SEO content production`.
 
 The collection was designed around the assignment requirements: identify 10 strong experts, collect recent content through technical workflows, organize the material clearly in the repository, and document why the final set is worth using.
 
