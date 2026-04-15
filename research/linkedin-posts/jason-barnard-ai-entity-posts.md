@@ -1,4 +1,4 @@
-# Jason Barnard - My Notes on Recent LinkedIn Posts
+# Jason Barnard - My Notes on Recent LinkedIn Posts 
 
 Profile: https://www.linkedin.com/in/jasonmbarnard/
 
