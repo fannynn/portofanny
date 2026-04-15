@@ -1,7 +1,9 @@
 ﻿# How AI and AEO are Reshaping SEO
 
 Speaker: Metehan Yesilyurt
+
 URL: https://www.youtube.com/watch?v=A9gXydf0458
+
 Collected: 2026-04-15
 
 ## Full Transcript
