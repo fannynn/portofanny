@@ -4,9 +4,7 @@ Profile: https://www.linkedin.com/in/jasonmbarnard/
 
 I picked Jason Barnard because his angle is very different from generic AI content advice. He keeps focusing on how AI systems decide who to recommend, which makes his work feel more like recommendation engineering than traditional SEO commentary.
 
-## Post 1
-
-Title: Over the last year, AI systems have quietly become your most influential sales team
+## Post 1 - Over the last year, AI systems have quietly become your most influential sales team
 
 URL: https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj
 
@@ -21,9 +19,7 @@ What stood out to me:
 How this helps my future playbook:
 This makes me want to include a section on "training the machine before scaling content." In other words, I should not only think about publishing more pages. I should think about whether AI systems can confidently explain who the brand is and why it should be recommended.
 
-## Post 2
-
-Title: What actually matters most for your entity home, the page itself, or schema markup?
+## Post 2 - What actually matters most for your entity home, the page itself, or schema markup?
 
 URL: https://www.linkedin.com/posts/kalicube_entityseo-knowledgepanel-entityhome-activity-7425107363940069376-Rhru
 
