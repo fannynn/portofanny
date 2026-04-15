@@ -76,7 +76,7 @@ That same mindset carried into the research phase of this repository. The projec
 
 ## Research Update: AI-Powered SEO Content Production
 
-After the setup was complete, I used the repo to collect research for topic `#3 AI-powered SEO content production`.
+After the setup was complete, I used the repo to collect research for my chosen topic, which is AI-powered SEO content production.
 
 I did not want this repository to become a generic folder of SEO links. The goal was to build a source base that could support a future playbook, especially around:
 
