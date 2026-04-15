@@ -1,4 +1,4 @@
-# Helene Jelenc - My Notes on Recent LinkedIn Posts
+# Helene Jelenc - My Notes on Recent LinkedIn Posts 
 
 Profile: https://si.linkedin.com/in/helenejelenc
 
