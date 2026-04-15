@@ -5,10 +5,7 @@ Profile: https://si.linkedin.com/in/helenejelenc
 I picked Helene Jelenc because her work feels especially useful for B2B SaaS and for understanding how AI visibility changes what kind of content and brand presence actually matters.
 
 Note to myself:
-The LinkedIn post below opens into a YouTube video because the LinkedIn post is sharing a video interview. That is normal. I am still treating the LinkedIn post as the source because the post summary itself tells me why the video matters and how Flow Agency is framing the findings.
-
-Update:
-I also made a separate transcript file for the linked YouTube interview so I can use both the LinkedIn post summary and the longer spoken source together.
+The LinkedIn post below opens into a YouTube video because the LinkedIn post is sharing a video interview. That is normal. I am still treating the LinkedIn post as the source because the post summary itself tells me why the video matters and how Flow Agency is framing the findings. I also made a separate transcript file for the linked YouTube interview so I can use both the LinkedIn post summary and the longer spoken source together.
 
 Transcript file:
 `research/youtube-transcripts/helene-jelenc-ai-visibility-findings.md`
