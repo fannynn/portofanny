@@ -1,4 +1,4 @@
-# AI-Powered SEO Content Production - Selected Sources
+ AI-Powered SEO Content Production - Selected Sources
 
 This file is the main source index for the project. I chose 10 experts whose recent material felt strong enough to support a future playbook, especially for AI visibility, content production systems, entity understanding, and B2B SaaS search behavior.
 
@@ -54,11 +54,16 @@ This file originally focused only on the final 10 selected experts. To make the 
 | Environment | `WSL` | Used for terminal-based setup, model configuration attempts, and troubleshooting. |
 | App-entry reference | https://www.youtube.com/watch?v=1wP97Rd62cg&t=346s | Tutorial used to figure out the Codex login flow through **Open Codex Sidebar** when I did not yet know how to access it correctly. |
 | LinkedIn profile entry point | https://www.linkedin.com/in/lilyraynyc/ | Profile used to access and review Lily Ray's recent posts before choosing the final source. |
+| LinkedIn post entry point | https://www.linkedin.com/posts/lily-ray-44755615_debunking-the-myth-that-search-is-dying-activity-7419834269159718914-_GgS | Additional Lily Ray post reviewed while evaluating whether her recent LinkedIn material fit the shortlist. |
 | LinkedIn profile entry point | https://www.linkedin.com/in/jasonmbarnard/ | Profile used to access and review Jason Barnard's recent posts before choosing the final source. |
+| LinkedIn post entry point | https://www.linkedin.com/posts/kalicube_entityseo-knowledgepanel-entityhome-activity-7425107363940069376-Rhru | Additional Jason Barnard post reviewed while assessing his entity SEO angle and shortlist fit. |
 | LinkedIn profile entry point | https://si.linkedin.com/in/helenejelenc | Profile used to access and review Helene Jelenc's recent posts before choosing the final source. |
+| LinkedIn post entry point | https://www.linkedin.com/posts/flow-agency_more-buyers-are-turning-to-llms-to-research-activity-7401223526130536449-Wcya | Additional Helene Jelenc / Flow Agency post reviewed while comparing her recent AI visibility content. |
 | Supporting cross-source link | https://www.youtube.com/watch?v=JkEjVLnNzBU | Video interview linked from Helene Jelenc's LinkedIn post; used as an additional long-form source connected to the LinkedIn notes. |
 
 Some app access points in the workflow did not come from public URLs. For example, `Claude Code` was installed through `Cursor Extensions`, and `Codex` was opened through **Open Codex Sidebar** inside Cursor. I am noting that here so the workflow is visible even where the entry point was inside the app rather than on a webpage.
+
+For LinkedIn specifically, the repo currently contains three direct profile entry points because those are the profile URLs I explicitly recorded while collecting posts. I also added the extra LinkedIn post entry points I reviewed so the discovery trail is clearer even where I did not save every profile page separately.
 
 ## Why This Set Feels Strong
 
