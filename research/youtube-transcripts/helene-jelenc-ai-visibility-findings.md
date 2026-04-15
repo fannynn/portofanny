@@ -1,7 +1,9 @@
-# How to work with AI visibility - findings from AI test
+# How to work with AI visibility - findings from AI test 
 
 Speaker: Helene Jelenc
+
 URL: https://www.youtube.com/watch?v=JkEjVLnNzBU
+
 Collected: 2026-04-15
 
 ## Full Transcript
