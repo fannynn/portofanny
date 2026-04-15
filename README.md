@@ -64,3 +64,101 @@ After researching online, I discovered that Git was not installed on my system. 
 ## Reflection
 
 This setup process strengthened my confidence in troubleshooting technical problems independently. I used Google and YouTube strategically to find accurate solutions, adapted quickly to unfamiliar tools and workflows, and stayed persistent through each issue until the environment was fully configured. The experience reflects both technical initiative and practical problem-solving skills that I can apply to future development tasks.
+
+---
+
+## Next Phase: AI-Powered SEO Content Production Research
+
+After completing the setup process, I continued this repository as a research project focused on **AI-powered SEO content production**. My goal was not only to collect sources, but to build a research base strong enough to support a real playbook later.
+
+## What I Collected
+
+Inside `/research`, I organized the project into:
+
+- `research/sources.md` for the ranked source list and research direction
+- `research/linkedin-posts/` for recent LinkedIn post notes from selected experts
+- `research/youtube-transcripts/` for video transcripts organized by video
+- `research/other` for extra supporting research notes
+
+So far, I collected:
+
+- a ranked expert/source list in `research/sources.md`
+- LinkedIn research notes for Lily Ray, Jason Barnard, and Helene Jelenc
+- YouTube transcript files for Dan Petrovic, Steve Toth, Metehan Yeşilyurt, Kevin Indig, Marie Haynes, Szymon Słowik, Aleyda Solis, and Helene Jelenc
+- personal notes attached to transcript files so I can connect the raw source material with my own research takeaways
+
+## Why I Chose These Experts
+
+I did not want to just use the first generic SEO names that appeared in search results. I wanted experts with stronger voices, more specific experience, and ideas that felt genuinely useful for **AI-powered SEO content production**.
+
+To choose them, I used:
+
+- the Wellows article on top AI SEO agencies: https://wellows.com/blog/top-ai-seo-agencies/
+- LinkedIn recommendations
+- my discussions with Claude to brainstorm and narrow down relevant experts
+- additional research into the experts' companies, roles, LinkedIn content, and YouTube material
+
+From there, I narrowed the list to experts whose work seemed:
+
+- actually practiced, not just discussed theoretically
+- relevant to AI visibility, AI search, entity SEO, content systems, or SaaS-focused SEO
+- strong enough to help me later build a practical playbook instead of a surface-level summary
+
+Some of the companies and contexts that helped me judge their relevance were:
+
+- `DEJAN AI`, which made Dan Petrovic stand out for deeper AI and search experimentation
+- `SEO Notebook / Notebook Agency`, which made Steve Toth stand out for systems and execution
+- `takaoto.pro`, which made Szymon Słowik stand out for more technical and strategic SEO thinking
+- `metehan.ai / AppSamurai`, which made Metehan Yeşilyurt stand out for AI-native experimentation
+- `Growth Memo`, which made Kevin Indig stand out for strategic and research-driven analysis
+- `Amsive`, which made Lily Ray stand out for quality, trust, and AI search analysis
+- `MHC Digital`, which made Marie Haynes stand out for search quality and visibility diagnosis
+- `Kalicube`, which made Jason Barnard stand out for brand/entity understanding
+- `Orainti`, which made Aleyda Solis stand out for practical SEO workflows
+- `Flow Agency`, which made Helene Jelenc stand out especially for B2B SaaS and AI visibility testing
+
+## Technical Tools and API Workflow
+
+This project also pushed me beyond basic documentation work and into using more technical tools directly.
+
+I used:
+
+- `Python` for transcript collection
+- `youtube-transcript-api` to pull YouTube transcripts
+- `Cursor IDE` as the main working environment
+- `Git` and `GitHub` for version control
+- `Node.js` and additional terminal setup to support the project workflow
+
+I also worked with a more custom AI setup:
+
+- I used my own `SumoPod` API key
+- because that setup was more manual, I installed `WSL`
+- I used the `WSL` terminal inside Cursor IDE
+- I configured SumoPod manually there
+- I installed Claude Code manually through the terminal
+- I configured the model manually as `Sonnet 4.6`
+
+This part of the project shows that I was not only collecting notes manually, but also learning how to work with APIs, terminal-based setup, and AI tooling in a more technical way.
+
+## Why This Material Can Support a Real Playbook Later
+
+I specifically looked for sources that could support a future playbook, not just fill a folder.
+
+The material is useful for that because it includes:
+
+- expert perspectives from practitioners with strong reputations and specific niches
+- LinkedIn posts for recent observations and framing
+- YouTube transcripts for longer explanations, tests, and strategic detail
+- my own notes on why each source matters and what ideas may be useful later
+
+That combination gives me a stronger base for identifying patterns around:
+
+- AI visibility vs. traditional rankings
+- content diversification across formats
+- brand/entity signals
+- AI-native SEO workflows
+- what kinds of content systems might still perform well in an AI-search environment
+
+## Project Workflow
+
+I also committed and pushed my work regularly throughout the process instead of leaving everything for one giant commit at the end. That helped me keep the repository organized while I was still learning, testing, troubleshooting, and refining the research structure as I went.

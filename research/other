@@ -1,1 +1,76 @@
 
+# Supporting Notes - AI-Powered SEO Content Production Research
+
+## Research Goal
+
+My goal with this project is not only to collect expert content, but to build a source base strong enough to support a real playbook later for **AI-powered SEO content production**.
+
+I wanted to study practitioners whose work could help answer questions like:
+
+- how AI visibility differs from traditional rankings
+- what kinds of content systems still matter in AI-search environments
+- how brand, entities, citations, and cross-format content influence discoverability
+- what practical workflows might actually work for B2B SaaS or similar contexts
+
+## How I Chose My Sources
+
+I did not want to rely on the first generic names that appeared in Google results.
+
+Instead, I used:
+
+- the Wellows article on top AI SEO agencies
+- LinkedIn recommendations
+- my discussion with Claude about strong SEO and AI practitioners
+- extra research into expert backgrounds, their companies, and the kinds of content they publish
+
+From that wider pool, I selected the experts whose material felt:
+
+- more niche and interesting
+- more practical than generic
+- more likely to help me build a real framework or playbook later
+
+## Why The Material Feels Strong Enough For A Future Playbook
+
+This research set feels useful because it gives me a mix of:
+
+- recent LinkedIn posts for fresh observations and framing
+- YouTube interviews and talks for longer explanations
+- transcript files for raw source material
+- my own notes for what stood out and why it matters
+
+That gives me a better foundation for later synthesis instead of only collecting links.
+
+## Technical Workflow I Used
+
+This project also required me to use more technical tools than I expected at first.
+
+I used:
+
+- `Cursor IDE` as my main working environment
+- `Git` and `GitHub` for version control
+- `Git Bash` as one of the terminals I used during setup and repository work
+- `Python` for transcript collection
+- `youtube-transcript-api` to pull YouTube transcripts
+- `Node.js` for additional environment setup
+
+I also worked with a custom AI setup:
+
+- I used my own `SumoPod` API key
+- because that workflow was more manual, I installed `WSL`
+- I used the `WSL` terminal inside Cursor IDE
+- I configured SumoPod manually there
+- I installed Claude Code manually through the terminal
+- I configured the model manually as `Sonnet 4.6`
+
+I also used `Codex` for many of the fixes when I still had unresolved terminal issues. That was especially helpful when I got stuck on setup problems, file structure issues, transcript collection workflow, and Git-related confusion.
+
+## What I Have Organized So Far
+
+- `research/sources.md` contains the ranked source list and why the chosen experts matter
+- `research/linkedin-posts/` contains recent LinkedIn research notes
+- `research/youtube-transcripts/` contains transcript-first files organized by video
+- transcript files also include my own notes at the end so the raw material and my takeaways stay connected
+
+## Workflow Note
+
+I committed and pushed my work regularly instead of waiting until the very end. That helped me keep the repo organized while I was still learning, troubleshooting, and improving the research structure.
