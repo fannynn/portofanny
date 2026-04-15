@@ -1,4 +1,4 @@
-# Lily Ray - My Notes on Recent LinkedIn Posts
+# Lily Ray - My Notes on Recent LinkedIn Posts 
 
 Profile: https://www.linkedin.com/in/lilyraynyc/
 
