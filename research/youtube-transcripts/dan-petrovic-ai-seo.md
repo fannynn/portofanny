@@ -1,7 +1,9 @@
 ﻿# AI SEO Deep Dive - Tom Critchlow & Dan Petrovic
 
 Speaker: Dan Petrovic
+
 URL: https://www.youtube.com/watch?v=-f9QCqTqdTA
+
 Collected: 2026-04-15
 
 ## Full Transcript
