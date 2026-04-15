@@ -1,71 +1,51 @@
-# Ranked Sources - AI-Powered SEO Content Production
+# AI-Powered SEO Content Production - Selected Sources
 
-This list favors unusual, high-signal material from practitioners who are testing, shipping, or formalizing real systems for AI-driven search visibility.
+This file is the main source index for the project. I chose 10 experts whose recent material felt strong enough to support a future playbook, especially for AI visibility, content production systems, entity understanding, and B2B SaaS search behavior.
 
-## Why I Chose These Experts
+## Selection Logic
 
-I did not want this project to be based on generic SEO names or the first results I saw in search. I wanted experts whose work felt genuinely useful for AI-powered SEO content production, especially if I want to build a real playbook from this research later.
+The shortlist was not built from whoever is most famous. I tried to bias toward people who were doing at least one of these things:
 
-I looked for people who:
+- publishing original frameworks, tests, or operational thinking
+- connecting AI search to real buyer journeys instead of trend commentary
+- offering a niche angle like entity SEO, AI visibility measurement, or recommendation logic
+- showing enough depth that their material could later become part of a real workflow
 
-- seem to actually practice what they teach
-- have stronger voices or unusual points of view
-- publish experiments, frameworks, or detailed process thinking
-- connect well to AI visibility, AI search, entity SEO, content systems, or B2B SaaS SEO
-- felt more specific and high-signal than generic marketing advice
+## Final 10 Experts
 
-## How I Found Them
+| Rank | Expert | Platform | Content Date | Source Title | Link | Why This Source Matters |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | Dan Petrovic | YouTube | 2026-04-15 | AI SEO Deep Dive - Tom Critchlow & Dan Petrovic | https://www.youtube.com/watch?v=-f9QCqTqdTA | Best source in the set for grounding, snippets, citation logic, and the idea of selection rate instead of naive rank tracking. |
+| 2 | Steve Toth | YouTube | 2026-04-15 | The New SEO: How to Win in ChatGPT, Gemini, and AI Search | https://www.youtube.com/watch?v=FMPaKBesM6w | Strongest source for turning AI search into a commercial content workflow around deal breakers, alternatives, and comparison pages. |
+| 3 | Metehan Yesilyurt | YouTube | 2026-04-15 | How AI and AEO are Reshaping SEO | https://www.youtube.com/watch?v=A9gXydf0458 | One of the most AI-native sources in the set, useful for retrieval thinking, AEO/GEO framing, and multi-format discoverability. |
+| 4 | Kevin Indig | YouTube | 2026-04-15 | The key to success in SEO for 2025 is automation | https://www.youtube.com/watch?v=9Wdp_mhGgRQ | Helpful for repeatable systems: automation, scalable briefs, and research-driven SEO operations instead of generic "write more content" advice. |
+| 5 | Marie Haynes | YouTube | 2026-04-15 | AI & Search: What SEOs Need to Know (and Do) Right Now | https://www.youtube.com/watch?v=mbXmbfX6FVo | Important quality and trust counterweight so the research does not become hype-heavy or blind to risk. |
+| 6 | Szymon Slowik | YouTube | 2026-04-15 | SEO in 2025: Beyond Blue Links | https://www.youtube.com/watch?v=cH-CWpQTyeQ | Useful for broadening the project beyond rankings into AI-shaped visibility, entities, and search behavior change. |
+| 7 | Aleyda Solis | YouTube | 2026-04-15 | Focus on the long tail | https://www.youtube.com/watch?v=8vfoSMqka3A | Strong complement for long-tail economics, intent refinement, and deciding what content still deserves production effort. |
+| 8 | Lily Ray | LinkedIn | 2026-04-15 | Don't get too excited about AI Overview & AI Mode data appearing in GSC | https://www.linkedin.com/posts/lily-ray-44755615_ai-aimode-seo-activity-7340792082837450752-psb_ | Strong warning against bad AI-search measurement and false confidence in noisy visibility data. |
+| 9 | Jason Barnard | LinkedIn | 2026-04-15 | Over the last year, AI systems have quietly become your most influential sales team | https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj | Excellent source for entity understanding, recommendation logic, and why brand clarity matters before scaling content. |
+| 10 | Helene Jelenc | LinkedIn | 2026-04-15 | How to work with AI visibility - findings from AI test | https://www.linkedin.com/posts/flow-agency_how-to-work-with-ai-visibility-findings-activity-7436712423350304768-fCbN | Strong B2B SaaS source with direct AI visibility findings, cross-funnel content implications, and format diversification. |
 
-I used a mix of sources to build and narrow down the list:
+## Where The Files Live
 
-- the Wellows article on top AI SEO agencies: https://wellows.com/blog/top-ai-seo-agencies/
-- LinkedIn recommendations
-- my discussion with Claude about AI SEO agencies, experts, and who actually seems credible
-- extra research into the companies behind these experts through LinkedIn and YouTube
+- Dan Petrovic: `research/youtube-transcripts/dan-petrovic-ai-seo.md`
+- Steve Toth: `research/youtube-transcripts/steve-toth-new-seo-ai-search.md`
+- Metehan Yesilyurt: `research/youtube-transcripts/metehan-yesilyurt-aeo-geo.md`
+- Kevin Indig: `research/youtube-transcripts/kevin-indig-seo-automation-2025.md`
+- Marie Haynes: `research/youtube-transcripts/marie-haynes-ai-search-now.md`
+- Szymon Slowik: `research/youtube-transcripts/szymon-slowik-beyond-blue-links.md`
+- Aleyda Solis: `research/youtube-transcripts/aleyda-solis-long-tail-ai-overviews.md`
+- Lily Ray: `research/linkedin-posts/lily-ray-ai-search-posts.md`
+- Jason Barnard: `research/linkedin-posts/jason-barnard-ai-entity-posts.md`
+- Helene Jelenc: `research/linkedin-posts/helene-jelenc-ai-visibility-posts.md`
 
-After collecting a wider pool of names, I narrowed it down to the 10 experts whose backgrounds, company context, and public material felt the most relevant and interesting for this topic.
+## Why This Set Feels Strong
 
-| Rank | Expert | Source Type | Source Title | Why It Matters | Exact File Name |
-| --- | --- | --- | --- | --- | --- |
-| 1 | Dan Petrovic | YouTube | AI SEO Deep Dive - Tom Critchlow & Dan Petrovic | Best source for mechanistic AI-search thinking: grounding, citation mining, snippet selection, and how AI systems decide what to surface. | `research/youtube-transcripts/dan-petrovic-ai-seo.md` |
-| 2 | Steve Toth | YouTube | The New SEO: How to Win in ChatGPT, Gemini, and AI Search | Strongest operations playbook for commercial intent, comparison content, buyer-journey shifts, and AI-era SEO execution. | `research/youtube-transcripts/steve-toth-new-seo-ai-search.md` |
-| 3 | Metehan Yesilyurt | YouTube | How AI and AEO are Reshaping SEO | One of the most niche angles in the set: AEO/GEO, AI-native distribution, and content designed for LLM retrieval instead of classic rankings alone. | `research/youtube-transcripts/metehan-yesilyurt-aeo-geo.md` |
-| 4 | Kevin Indig | YouTube | The key to success in SEO for 2025 is automation | High-value for repeatable workflows: automation, SERP mining, scalable briefs, and AI-assisted content systems without sounding generic. | `research/youtube-transcripts/kevin-indig-seo-automation-2025.md` |
-| 5 | Marie Haynes | YouTube | AI & Search: What SEOs Need to Know (and Do) Right Now | Gives you the quality-risk lens: what changes in AI search, what still matters, and where content systems break when trust is weak. | `research/youtube-transcripts/marie-haynes-ai-search-now.md` |
-| 6 | Szymon Slowik | YouTube | SEO in 2025: Beyond Blue Links | Useful for broadening your framework beyond rankings into entity-driven and AI-shaped visibility strategy. | `research/youtube-transcripts/szymon-slowik-beyond-blue-links.md` |
-| 7 | Aleyda Solis | YouTube | Focus on the long tail | Great strategic complement: long-tail query economics, intent refinement, and how AI search changes what content remains worth producing. | `research/youtube-transcripts/aleyda-solis-long-tail-ai-overviews.md` |
-| 8 | Lily Ray | LinkedIn | Don't get too excited about AI Overview & AI Mode data appearing in GSC | A strong recent caution against bad AI-search measurement. Useful for making your future playbook smarter about metrics, attribution, and noisy reporting. | `research/linkedin-posts/lily-ray-ai-search-posts.md` |
-| 9 | Jason Barnard | LinkedIn | Over the last year, AI systems have quietly become your most influential sales team | Excellent for brand-entity, recommendation logic, and trust-system thinking across search engines and LLMs. This is highly playbook-worthy for AI recommendations. | `research/linkedin-posts/jason-barnard-ai-entity-posts.md` |
-| 10 | Helene Jelenc | LinkedIn | How to work with AI visibility - findings from AI test | Strong B2B SaaS angle with measured AI visibility gaps, cross-funnel content diversification, and the disconnect between ranking and AI presence. | `research/linkedin-posts/helene-jelenc-ai-visibility-posts.md` |
+The final set has a useful internal balance:
 
-## Source Links
+- Dan Petrovic, Metehan Yesilyurt, and Jason Barnard bring the most unusual conceptual angles
+- Steve Toth, Kevin Indig, and Helene Jelenc are the strongest "turn this into a workflow" voices
+- Lily Ray and Marie Haynes keep the project grounded in quality, trust, and measurement skepticism
+- Aleyda Solis and Szymon Slowik help connect AI search shifts back to practical SEO decision-making
 
-- Dan Petrovic: https://www.youtube.com/watch?v=-f9QCqTqdTA
-- Steve Toth: https://www.youtube.com/watch?v=FMPaKBesM6w
-- Metehan Yesilyurt: https://www.youtube.com/watch?v=A9gXydf0458
-- Kevin Indig: https://www.youtube.com/watch?v=9Wdp_mhGgRQ
-- Marie Haynes: https://www.youtube.com/watch?v=mbXmbfX6FVo
-- Szymon Slowik: https://www.youtube.com/watch?v=cH-CWpQTyeQ
-- Aleyda Solis: https://www.youtube.com/watch?v=8vfoSMqka3A
-- Lily Ray: https://www.linkedin.com/posts/lily-ray-44755615_ai-aimode-seo-activity-7340792082837450752-psb_
-- Jason Barnard: https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj
-- Helene Jelenc / Flow Agency: https://www.linkedin.com/posts/flow-agency_how-to-work-with-ai-visibility-findings-activity-7436712423350304768-fCbN
-
-## Company Context I Looked At
-
-- `DEJAN AI`: helped me see Dan Petrovic as more experimental and systems-level than generic SEO commentary
-- `SEO Notebook / Notebook Agency`: made Steve Toth feel especially useful for workflow and execution thinking
-- `takaoto.pro`: made Szymon Słowik stand out for strategic and technical depth
-- `metehan.ai / AppSamurai`: made Metehan Yeşilyurt stand out for AI-native experimentation
-- `Growth Memo`: made Kevin Indig stand out for strategic and research-heavy analysis
-- `Amsive`: made Lily Ray stand out for quality, trust, and AI-search analysis
-- `MHC Digital`: made Marie Haynes stand out for search-quality and risk-diagnosis thinking
-- `Kalicube`: made Jason Barnard stand out for entity and brand understanding
-- `Orainti`: made Aleyda Solis stand out for practical SEO workflows
-- `Flow Agency`: made Helene Jelenc stand out especially for B2B SaaS and AI visibility testing
-
-## Notes For Your Playbook Later
-
-- Dan Petrovic, Metehan Yesilyurt, and Jason Barnard are the most conceptually unusual sources in the set.
-- Steve Toth, Kevin Indig, and Helene Jelenc are the strongest "turn this into a workflow" sources.
-- Marie Haynes and Lily Ray are especially useful as guardrails so your playbook does not become hype-heavy or low-trust.
+That mix gives me something better than a folder of trend content. It gives me a base for a later playbook about how AI-powered SEO content production should actually work.

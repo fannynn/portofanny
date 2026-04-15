@@ -1,6 +1,6 @@
 # Claude Code + WSL + SumoPod Troubleshooting Example
 
-Another useful technical issue I worked through involved trying to use `Claude Code` inside `Cursor IDE` through `WSL`, while preferring my own `SumoPod` API key instead of the direct Claude sidebar login flow.
+Another technical issue I worked through came up while trying to run `Claude Code` inside `Cursor IDE` through `WSL`, using my own `SumoPod` API key instead of the standard Claude sidebar login flow.
 
 ## Environment Setup Completed First
 
@@ -13,11 +13,11 @@ Another useful technical issue I worked through involved trying to use `Claude C
   - `ANTHROPIC_MODEL=claude-sonnet-4-6`
 - checked the `SumoPod` dashboard to confirm that `claude-sonnet-4-6` was listed as available
 
-The CLI itself would open successfully, which meant the installation and base command path were not the main problem.
+The CLI itself opened successfully, so the main problem was clearly not basic installation or command availability.
 
 ## Exact Failure Point
 
-The actual failure appeared only when I tried to start the Claude Code workflow with:
+The failure only showed up when I tried to start the Claude Code workflow with:
 
 ```bash
 /init
@@ -39,29 +39,29 @@ I then tested the obvious fallback path by running:
 
 and selecting the same model again, but `/init` still failed with the same message.
 
-That made the issue more technical than a simple typo or missing installation step, because:
+At that point, the issue looked more technical than a typo or a missed install step, because:
 
 - the `claude` command itself was already available
 - the environment variables were already exported in `WSL`
 - the model name matched what was shown in the `SumoPod` dashboard
 - the failure happened at runtime when Claude Code tried to initialize a session
 
-## Technical Hypotheses I Had To Investigate
+## Technical Hypotheses I Investigated
 
-At that point, the debugging questions became more specific:
+The debugging path then became much more specific:
 
-- whether `Claude Code` actually supports overriding its provider through `ANTHROPIC_BASE_URL`, or whether it expects Anthropic's own endpoint behavior more strictly than a normal SDK client would
-- whether `SumoPod` exposes an Anthropic-native API surface or only an OpenAI-compatible format, because Claude Code may expect Anthropic-specific request and response behavior
-- whether the endpoint needs a more specific path than just `https://ai.sumopod.com`
-- whether the backend supports the exact `/v1/messages` format Claude Code expects during `/init`
-- whether the model name is listed in the dashboard but still unavailable to this specific API route or account scope
-- whether Claude Code reads these environment variables correctly inside the `Cursor` + `WSL` context, or whether the subprocess environment differs from the shell session where I exported them
+- `Claude Code` might not fully support provider overrides through `ANTHROPIC_BASE_URL`, even if a normal SDK client does
+- `SumoPod` might expose only an OpenAI-compatible surface instead of the Anthropic-style behavior Claude Code expects
+- the endpoint might require a more specific path than `https://ai.sumopod.com`
+- the backend might not support the exact `/v1/messages` request and response format used during `/init`
+- the model name might appear in the dashboard but still be unavailable for that route, account scope, or session type
+- the environment variables might be available in the `WSL` shell but not inherited the same way by the `Cursor` + `WSL` Claude Code process
 
 ## Why This Was A Real Debugging Issue
 
-I think this is worth documenting because it shows a more technical kind of troubleshooting than a basic install error.
+This feels worth documenting because it shows a more technical category of troubleshooting than a basic install error.
 
-The hard part was not getting the CLI to launch. The harder part was diagnosing a compatibility problem between:
+Getting the CLI to launch was not the hard part. The harder part was diagnosing a compatibility problem across:
 
 - `Cursor IDE`
 - `WSL`
@@ -69,4 +69,4 @@ The hard part was not getting the CLI to launch. The harder part was diagnosing 
 - custom `ANTHROPIC_*` environment variables
 - a third-party provider endpoint instead of the default Claude login flow
 
-In other words, the setup looked correct at the shell level, but the actual application workflow still failed at model initialization. That made it a useful example of API-provider debugging, environment verification, and tool-integration troubleshooting rather than just a one-step installation problem.
+In other words, the setup looked correct at the shell level, but the real workflow still broke at model initialization. That made it a useful example of API-provider debugging, environment verification, and tool-integration troubleshooting rather than a simple one-step setup issue.

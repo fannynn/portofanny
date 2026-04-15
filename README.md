@@ -1,166 +1,84 @@
-# Portfolio Project Setup Documentation
+# AI-Powered SEO Content Production Research
 
-## Hello! I'm Fanny ;)
+This repository contains my research project for the 100Hires junior growth marketing assignment. I chose topic `#3 AI-powered SEO content production` because it sits at the intersection of SEO, LLM visibility, content systems, and B2B SaaS buyer behavior.
 
-This repository was created as part of a portfolio project assignment to demonstrate the ability to follow technical instructions, troubleshoot setup issues, and document the workflow clearly and professionally.
-
-## Tools Installed
-
-The following tools and platforms were successfully installed and configured:
-
-- Cursor IDE
-- Claude Code extension
-- Codex extension
-- Git
-- GitHub repository
-
-## Steps Completed
-
-1. Installed Cursor IDE successfully.
-2. Opened Cursor IDE.
-3. Initially got confused while installing Claude Code because I mistakenly tried using the browser installation method with PowerShell.
-4. Encountered an **"Access is denied"** error when running the `mshta` command in PowerShell.
-5. Researched the correct method and realized the proper way was through Cursor Extensions.
-6. Opened Extensions using **Ctrl + Shift + X**.
-7. Searched for **Claude Code**.
-8. Installed and logged into Claude Code successfully.
-9. Installed the **Codex** extension.
-10. Initially did not know how to log into Codex.
-11. Searched for a login tutorial on YouTube and found a helpful guide:  
-    [Codex Login Tutorial](https://www.youtube.com/watch?v=1wP97Rd62cg&t=346s)
-12. Followed the tutorial by clicking the Codex extension and selecting **Open Codex Sidebar**.
-13. This redirected me to the login page, and I successfully logged in.
-14. Created a public GitHub repository.
-15. Attempted to open or clone the repository in Cursor but encountered another issue because nothing appeared.
-16. Investigated the issue through Google search.
-17. Discovered that Git was not installed on my system.
-18. Installed Git.
-19. Reopened Cursor and used **Ctrl + Shift + P**.
-20. The **Clone with GitHub** option appeared successfully.
-21. Opened the repository in Cursor IDE successfully.
-22. Created the README file.
-23. Prepared for commit and push to GitHub.
-
-## Issues Encountered and Solutions
-
-### Issue 1: Claude Code Installation Confusion
-
-I initially used the wrong installation approach by trying to run a browser-based method through PowerShell. This caused an **"Access is denied"** error when running the `mshta` command.
-
-The issue was resolved by using the correct method: installing Claude Code through **Cursor Extensions** (`Ctrl + Shift + X`).
-
-### Issue 2: Codex Login Confusion
-
-At first, I was unsure how to log into Codex after installation.
-
-I solved this by searching for a tutorial on YouTube and following the steps to open **Open Codex Sidebar**, which redirected me to the login page and allowed successful sign-in.
-
-### Issue 3: Unable to Open GitHub Repository
-
-When I tried to clone the repository in Cursor, nothing appeared, which blocked progress.
-
-After researching online, I discovered that Git was not installed on my system. Once Git was installed, the **Clone with GitHub** option became available through **Ctrl + Shift + P**, and the issue was resolved.
-
-## Reflection
-
-This setup process strengthened my confidence in troubleshooting technical problems independently. I used Google and YouTube strategically to find accurate solutions, adapted quickly to unfamiliar tools and workflows, and stayed persistent through each issue until the environment was fully configured. The experience reflects both technical initiative and practical problem-solving skills that I can apply to future development tasks.
-
----
-
-## Next Phase: AI-Powered SEO Content Production Research
-
-After completing the setup process, I continued this repository as a research project focused on **AI-powered SEO content production**. My goal was not only to collect sources, but to build a research base strong enough to support a real playbook later.
+The goal was not to dump links into folders. I wanted to build a source base strong enough to support a real playbook later, especially around AI visibility, entity understanding, commercial-intent content, and the shift from classic rankings to citation and recommendation systems.
 
 ## What I Collected
 
-Inside `/research`, I organized the project into:
+Inside [`research/`](research/) I organized the project into:
 
-- `research/sources.md` for the ranked source list and research direction
-- `research/linkedin-posts/` for recent LinkedIn post notes from selected experts
-- `research/youtube-transcripts/` for video transcripts organized by video
-- `research/other/` for extra supporting research notes split into separate topic files
+- `research/sources.md` for the final list of 10 chosen experts, dates, links, and why each source matters
+- `research/linkedin-posts/` for recent LinkedIn post notes organized by author
+- `research/youtube-transcripts/` for transcript-first research files organized by video
+- `research/other/` for workflow notes, troubleshooting notes, and supporting research context
 
-So far, I collected:
+The collection includes:
 
-- a ranked expert/source list in `research/sources.md`
-- LinkedIn research notes for Lily Ray, Jason Barnard, and Helene Jelenc
-- YouTube transcript files for Dan Petrovic, Steve Toth, Metehan Yeşilyurt, Kevin Indig, Marie Haynes, Szymon Słowik, Aleyda Solis, and Helene Jelenc
-- personal notes attached to transcript files so I can connect the raw source material with my own research takeaways
+- 10 selected experts relevant to AI-powered SEO content production
+- 8 YouTube transcript files pulled for longer-form source material
+- 3 LinkedIn author files with recent posts and takeaways
+- additional notes on source selection, technical workflow, repo organization, and troubleshooting
 
-## Why I Chose These Experts
+## Why These Experts
 
-I did not want to just use the first generic SEO names that appeared in search results. I wanted experts with stronger voices, more specific experience, and ideas that felt genuinely useful for **AI-powered SEO content production**.
+I did not want this to be built from the first recognizable SEO names in search results. The shortlist was narrowed toward people whose work feels genuinely useful for a future playbook, not just for surface-level commentary.
 
-To choose them, I used:
+The people I prioritized usually had one or more of these traits:
 
-- the Wellows article on top AI SEO agencies: https://wellows.com/blog/top-ai-seo-agencies/
-- LinkedIn recommendations
-- my discussions with Claude to brainstorm and narrow down relevant experts
-- additional research into the experts' companies, roles, LinkedIn content, and YouTube material
+- they actively test or ship ideas instead of only reposting industry opinions
+- they connect AI search to real workflows, not only trend language
+- they publish unusual or high-signal thinking on citations, entities, AI visibility, or B2B SaaS search behavior
+- they seem capable of supporting a practical playbook later, not just a list of hot takes
 
-From there, I narrowed the list to experts whose work seemed:
+Some of the strongest examples in the final set are:
 
-- actually practiced, not just discussed theoretically
-- relevant to AI visibility, AI search, entity SEO, content systems, or SaaS-focused SEO
-- strong enough to help me later build a practical playbook instead of a surface-level summary
+- Dan Petrovic for mechanistic thinking about grounding, snippets, and selection
+- Steve Toth for buyer-journey compression, deal-breaker content, and comparison strategy
+- Jason Barnard for entity understanding and AI recommendation logic
+- Helene Jelenc for B2B SaaS AI visibility research with direct commercial relevance
+- Lily Ray and Marie Haynes for quality, trust, and anti-hype guardrails
 
-Some of the companies and contexts that helped me judge their relevance were:
+## Technical Workflow
 
-- `DEJAN AI`, which made Dan Petrovic stand out for deeper AI and search experimentation
-- `SEO Notebook / Notebook Agency`, which made Steve Toth stand out for systems and execution
-- `takaoto.pro`, which made Szymon Słowik stand out for more technical and strategic SEO thinking
-- `metehan.ai / AppSamurai`, which made Metehan Yeşilyurt stand out for AI-native experimentation
-- `Growth Memo`, which made Kevin Indig stand out for strategic and research-driven analysis
-- `Amsive`, which made Lily Ray stand out for quality, trust, and AI search analysis
-- `MHC Digital`, which made Marie Haynes stand out for search quality and visibility diagnosis
-- `Kalicube`, which made Jason Barnard stand out for brand/entity understanding
-- `Orainti`, which made Aleyda Solis stand out for practical SEO workflows
-- `Flow Agency`, which made Helene Jelenc stand out especially for B2B SaaS and AI visibility testing
-
-## Technical Tools and API Workflow
-
-This project also pushed me beyond basic documentation work and into using more technical tools directly.
+This project also pushed me into more technical collection work than a normal note-taking task.
 
 I used:
 
-- `Python` for transcript collection
-- `youtube-transcript-api` to pull YouTube transcripts
-- `Cursor IDE` as the main working environment
-- `Git` and `GitHub` for version control
-- `Node.js` and additional terminal setup to support the project workflow
+- `Python`
+- `youtube-transcript-api`
+- `Cursor IDE`
+- `Git` and `GitHub`
+- `WSL`
+- `Claude Code` and `Codex`
 
-I also worked with a more custom AI setup:
+The transcript workflow is documented in code through [`get_transcript.py`](get_transcript.py), which I used to fetch YouTube transcripts and save them into the repo structure. The supporting notes in `research/other/` also document the setup and troubleshooting work behind the collection process.
 
-- I used my own `SumoPod` API key
-- because that setup was more manual, I installed `WSL`
-- I used the `WSL` terminal inside Cursor IDE
-- I configured SumoPod-related environment variables manually there
-- I installed Claude Code manually through the terminal
-- I tested the model configuration manually as `claude-sonnet-4-6`
+One part of that workflow became a real debugging problem: `Claude Code` would launch from `WSL`, but `/init` failed when I tried to use my own `SumoPod` model configuration. I kept that note in the repo because it shows that part of the assignment was not just collecting sources, but also dealing honestly with provider compatibility, environment variables, and tool-integration issues.
 
-One useful troubleshooting case in this setup was that `Claude Code` would open from `WSL`, but `/init` still failed with a model-access error even after I selected `claude-sonnet-4-6` again through `/model`. That pushed me to think beyond basic installation and look at possible causes such as API compatibility, endpoint format, environment-variable support, and `Cursor` + `WSL` integration behavior.
+## Why The Material Is Playbook-Worthy
 
-This part of the project shows that I was not only collecting notes manually, but also learning how to work with APIs, terminal-based setup, and AI tooling in a more technical way, including cases where the problem was not fully solved yet and had to be documented honestly as an active debugging issue.
+This research set feels usable for a real playbook later because it covers more than one layer of the topic:
 
-## Why This Material Can Support a Real Playbook Later
+- recent LinkedIn posts for fresh observations and framing
+- long-form YouTube transcripts for deeper reasoning and process detail
+- practitioner notes on citations, entity SEO, AI search measurement, and B2B SaaS buyer behavior
+- my own synthesis inside the files so the repo is not just raw source storage
 
-I specifically looked for sources that could support a future playbook, not just fill a folder.
+The strongest recurring themes so far are:
 
-The material is useful for that because it includes:
+- AI visibility is not the same thing as traditional ranking
+- recommendation systems reward trust, clarity, and entity understanding
+- comparison content, deal-breaker content, and multi-format presence matter more in AI-assisted buying journeys
+- raw traffic thinking is weaker than source selection, citation, and recommendation thinking
 
-- expert perspectives from practitioners with strong reputations and specific niches
-- LinkedIn posts for recent observations and framing
-- YouTube transcripts for longer explanations, tests, and strategic detail
-- my own notes on why each source matters and what ideas may be useful later
+## Quick Navigation
 
-That combination gives me a stronger base for identifying patterns around:
+- [`research/sources.md`](research/sources.md)
+- [`research/linkedin-posts/`](research/linkedin-posts/)
+- [`research/youtube-transcripts/`](research/youtube-transcripts/)
+- [`research/other/`](research/other/)
 
-- AI visibility vs. traditional rankings
-- content diversification across formats
-- brand/entity signals
-- AI-native SEO workflows
-- what kinds of content systems might still perform well in an AI-search environment
+## Repo Workflow
 
-## Project Workflow
-
-I also committed and pushed my work regularly throughout the process instead of leaving everything for one giant commit at the end. That helped me keep the repository organized while I was still learning, testing, troubleshooting, and refining the research structure as I went.
+I committed and pushed throughout the project instead of waiting for one final dump. That mattered because I was still collecting, troubleshooting, reorganizing, and refining the research structure while learning the tools.
