@@ -65,19 +65,24 @@ Most advice stops at "be clear" or "be structured." That is not enough.
 A section is selectable when it can survive extraction, comparison, and decision pressure without losing meaning. I evaluate that with five checks:
 
 1. Constraint density
+
 The section should narrow the audience instead of gesturing at everyone.
 Use at least two meaningful constraints such as team size, business type, budget sensitivity, implementation speed, or technical complexity (source inspiration: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Aleyda Solis, [Focus on the long tail](https://www.youtube.com/watch?v=8vfoSMqka3A), 02.01.2025).
 
 2. Exclusion clarity
+
 Every important section should make it obvious who should not choose the product, because exclusion reduces ambiguity and helps the system narrow the candidate set (source inspiration: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Jason Barnard, [Over the last year, AI systems have quietly become your most influential sales team](https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj), 13.02.2026).
 
 3. Comparison anchoring
+
 A strong section gives the model something to compare against: a known competitor, a category expectation, or a clear tradeoff. Without comparison context, the copy is harder to select in shortlist-style answers (source inspiration: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
 
 4. Verifiable specifics
+
 Vague claims weaken selection confidence. Each important section should include at least one concrete signal such as a number, named integration, implementation window, or limitation (source inspiration: Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025; Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
 
 5. Extraction test
+
 Before publishing, apply one final filter: if this section is copied alone into an AI answer, does it still help a buyer decide? If not, rewrite it (source inspiration: Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025; Metehan Yesilyurt, [How AI and AEO are Reshaping SEO](https://www.youtube.com/watch?v=A9gXydf0458), 23.07.2025).
 
 Example:
