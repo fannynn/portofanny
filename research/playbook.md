@@ -1,0 +1,230 @@
+# AI Visibility SEO Playbook for B2B SaaS Content Production
+
+This playbook is built from the source set in this repository, not from generic SEO advice I could have written from memory. The core thesis is simple: the game is no longer just "rank a page." The harder and more useful problem is "be selected, cited, and represented correctly when AI systems compress a buying journey into one conversation."
+
+I am deliberately taking a stronger stance than most AI-search content does. If a tactic depends on bloated top-of-funnel fluff, vague brand messaging, or fake certainty from bad dashboards, I do not think it survives this shift.
+
+This version also fixes the three biggest weaknesses in the earlier feedback: it includes concrete examples, a measurement section, and a more opinionated point of view.
+
+## What This Playbook Is For
+
+This playbook is for B2B SaaS teams that want to improve AI visibility without turning their content operation into a spam factory. It is especially useful if your buyers compare vendors, ask nuanced follow-up questions, and use ChatGPT, Gemini, Perplexity, Google AI Overviews, YouTube, review sites, and listicles as one merged research environment.
+
+This is not a playbook for chasing vanity traffic. It is a playbook for increasing the odds that AI systems:
+
+- know what your company does
+- mention you for the right use cases
+- cite pages that support your strengths
+- keep you in the consideration set when buyers narrow options
+
+## My Position In One Sentence
+
+The most important shift is not technical. AI systems are now making recommendation decisions, not just retrieval decisions, so content production has to support selection, representation, and trust instead of only rankings (source: Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025; Jason Barnard, [Over the last year, AI systems have quietly become your most influential sales team](https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj), 13.02.2026).
+
+## Non-Negotiable Principles
+
+1. Stop treating generic informational traffic as a moat. Marie Haynes is right that a lot of "world knowledge" content is being compressed by AI, and Steve Toth is right that generic top-of-funnel pages are much weaker unless they help real buying decisions (source: Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025; Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026).
+2. Build for deal breakers, not just keywords. Buyers are increasingly asking AI tools to filter vendors by constraints, integrations, pricing, team fit, implementation needs, and industry specifics, so content should be organized around exclusion criteria and comparison logic (source: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026).
+3. Make every important page chunk-readable. Dan Petrovic's framing around snippet selection and semantic compression means pages should still make sense when parts of them are isolated from the rest of the page (source: Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025).
+4. Treat entity clarity as infrastructure, not decoration. Jason Barnard's work makes the point clearly: schema helps, but clear semantics, page structure, and corroboration across the web are what increase machine confidence (source: Jason Barnard, [What actually matters most for your entity home, the page itself, or schema markup?](https://www.linkedin.com/posts/kalicube_entityseo-knowledgepanel-entityhome-activity-7425107363940069376-Rhru), 06.08.2025).
+5. Diversify formats and surfaces. Helene Jelenc's study and LinkedIn notes both suggest AI visibility is spread across organic results, AI surfaces, third-party mentions, and video, with much lower overlap than many people assume (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.linkedin.com/posts/flow-agency_how-to-work-with-ai-visibility-findings-activity-7436712423350304768-fCbN), 09.03.2026; Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+
+## SOP
+
+### Step 1: Define the buying questions that actually remove or keep vendors
+
+Build your content map from buyer deal breakers, follow-up questions, and comparison prompts, not from a spreadsheet of head terms. Steve Toth's buyer-journey compression point and Aleyda Solis's long-tail focus both push in the same direction: specificity now matters more than broad reach (source: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Aleyda Solis, [Focus on the long tail](https://www.youtube.com/watch?v=8vfoSMqka3A), 02.01.2025).
+
+Do this:
+
+- Collect sales-call objections, lost-deal reasons, support questions, onboarding confusion, integration questions, pricing objections, and competitor comparisons before touching keyword tools (source: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
+- Group prompts by buying task, not by SEO vanity category. Good groups are "Can this work for my company?", "What disqualifies this tool?", "How is it different from X?", and "Will implementation be painful?" (source: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+- Prioritize high-specificity prompts because broad informational prompts are the easiest for AI systems to summarize away (source: Aleyda Solis, [Focus on the long tail](https://www.youtube.com/watch?v=8vfoSMqka3A), 02.01.2025).
+
+### Step 2: Fix entity clarity before scaling content
+
+If AI systems are fuzzy about who you are, what category you belong to, who you serve, and why you are distinct, more content just creates more fuzzy material.
+
+Do this:
+
+- Create or rewrite one entity home page that states exactly what the company is, who it serves, what it does not do, and what proof supports those claims (source: Jason Barnard, [Over the last year, AI systems have quietly become your most influential sales team](https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj), 13.02.2026; Jason Barnard, [What actually matters most for your entity home, the page itself, or schema markup?](https://www.linkedin.com/posts/kalicube_entityseo-knowledgepanel-entityhome-activity-7425107363940069376-Rhru), 06.08.2025).
+- Align your homepage, about page, product pages, LinkedIn, review profiles, partner pages, and directory listings so they reinforce the same category language and strengths instead of inventing five brand identities at once (source: Jason Barnard, [Over the last year, AI systems have quietly become your most influential sales team](https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj), 13.02.2026; Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+- Add schema only after the page itself is readable and explicit. Schema is an enhancer, not a rescue mission (source: Jason Barnard, [What actually matters most for your entity home, the page itself, or schema markup?](https://www.linkedin.com/posts/kalicube_entityseo-knowledgepanel-entityhome-activity-7425107363940069376-Rhru), 06.08.2025).
+
+### Step 3: Build pages that survive chunking and citation
+
+The page cannot rely on a clever intro and then hope the reader reaches the good part. AI systems often extract, compress, and compare fragments.
+
+Do this:
+
+- Give each important section a clear mini-job: define the issue, answer it directly, add proof, and then clarify edge cases so the section works even when lifted out of context (source: Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025; Metehan Yesilyurt, [How AI and AEO are Reshaping SEO](https://www.youtube.com/watch?v=A9gXydf0458), 23.07.2025).
+- Use headings, bullets, tables, and explicit entity relationships because they reduce parsing friction for LLM-style retrieval systems (source: Metehan Yesilyurt, [How AI and AEO are Reshaping SEO](https://www.youtube.com/watch?v=A9gXydf0458), 23.07.2025; Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
+- Add original evidence where possible, because AI systems need fresh, differentiating material and not another reheated blog post pretending to be insight (source: Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
+
+### Step 4: Produce the pages AI buyers actually need
+
+This is the page set I would prioritize first:
+
+- Comparison pages for your strongest competitor matchups, because buyers and AI tools both use them to sort the shortlist (source: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+- Alternatives pages tied to clear use cases or ICPs, because "best X for Y" is closer to how real buying happens than "what is X" pages now (source: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Aleyda Solis, [Focus on the long tail](https://www.youtube.com/watch?v=8vfoSMqka3A), 02.01.2025).
+- Integration pages that explain what the integration actually does, not just a graveyard of logos and "connects with X" fluff (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+- Proof pages like case studies, implementation notes, benchmark summaries, and buyer guides, because they support trust and give AI systems stronger material than marketing adjectives (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026; Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
+
+### Step 5: Build an insight-mining workflow before drafting
+
+Kevin Indig is useful here because he frames automation correctly. The win is not "generate more copy." The win is "mine better inputs and improve the workflow upstream."
+
+Do this:
+
+- Mine forums, review sites, Reddit, sales calls, support docs, competitor pages, SERP features, and existing winning pages before generating anything (source: Kevin Indig, [The key to success in SEO for 2025 is automation](https://www.youtube.com/watch?v=9Wdp_mhGgRQ), 08.04.2025).
+- Create a research brief with recurring objections, proof points, comparison attributes, and audience language before drafting (source: Kevin Indig, [The key to success in SEO for 2025 is automation](https://www.youtube.com/watch?v=9Wdp_mhGgRQ), 08.04.2025; Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
+- Use AI to accelerate drafts only after the source pattern is understood. Starting from a blank prompt is lazy and usually produces the exact kind of generic sludge AI systems are already learning to compress (source: Kevin Indig, [The key to success in SEO for 2025 is automation](https://www.youtube.com/watch?v=9Wdp_mhGgRQ), 08.04.2025; Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
+
+### Step 6: Diversify beyond your site
+
+This is where a lot of teams still act like it is 2019. It is not enough to publish on your own domain and wait to be discovered.
+
+Do this:
+
+- Make sure your brand is described consistently on third-party review sites, industry lists, partner pages, and author bios because AI systems pull from those surfaces too (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026; Jason Barnard, [Over the last year, AI systems have quietly become your most influential sales team](https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj), 13.02.2026).
+- Publish video for product explainers, comparisons, and implementation topics because video repeatedly shows up as an important AI-era support format (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.linkedin.com/posts/flow-agency_how-to-work-with-ai-visibility-findings-activity-7436712423350304768-fCbN), 09.03.2026; Szymon Slowik, [SEO in 2025: Beyond Blue Links](https://www.youtube.com/watch?v=cH-CWpQTyeQ), 06.03.2025).
+- Treat LinkedIn and podcasts as credibility surfaces, not side quests, because reputation and repeated topic association strengthen recommendation likelihood (source: Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025; Szymon Slowik, [SEO in 2025: Beyond Blue Links](https://www.youtube.com/watch?v=cH-CWpQTyeQ), 06.03.2025).
+
+### Step 7: Measure selection, not just clicks
+
+If you only measure rankings and sessions, you will miss the shift and then claim nothing is happening until it is too late. Lily Ray's skepticism matters here because noisy AI reporting can create fake confidence fast.
+
+Do this:
+
+- Track brand mention presence in AI outputs for a fixed set of high-value prompts and save the exact outputs over time, because raw mention share is an imperfect but useful proxy for visibility (source: Lily Ray, [Don't get too excited about AI Overview & AI Mode data appearing in GSC](https://www.linkedin.com/posts/lily-ray-44755615_ai-aimode-seo-activity-7340792082837450752-psb_), 17.06.2025; Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025).
+- Separate citation rate, mention rate, and recommendation rate instead of pretending they are the same thing. A brand can be cited, mentioned, or actually recommended, and those are different outcomes (source: Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025).
+- Monitor assisted-conversion quality from AI and LLM referral traffic even if volume is low, because Helene Jelenc's interview suggests that smaller LLM traffic can be more qualified than general organic traffic (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+- Use prompt clusters, not single prompts, when testing. One prompt is a screenshot. A cluster is a pattern (source: Lily Ray, [Don't get too excited about AI Overview & AI Mode data appearing in GSC](https://www.linkedin.com/posts/lily-ray-44755615_ai-aimode-seo-activity-7340792082837450752-psb_), 17.06.2025; Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+
+## Concrete Examples
+
+### Example 1: Bad chunk vs good chunk
+
+Bad chunk:
+
+`Our CRM platform empowers modern teams with flexible workflows, seamless collaboration, and innovative automation for growing businesses.`
+
+Why it is bad: it says almost nothing, gives AI systems no specific buyer criteria, and sounds like every SaaS homepage written after a tranquilizer.
+
+Better chunk:
+
+`This CRM is built for agencies with 10-100 staff that need QuickBooks sync, client-level permissions, and pipeline reporting without Salesforce-level setup time. It is not a fit for enterprise procurement-heavy teams that need deep custom object modeling.`
+
+Why it is better: it is specific, comparative, exclusionary, and easy to extract as a self-contained answer. That aligns with Steve Toth's deal-breaker framing, Dan Petrovic's chunking logic, and Jason Barnard's entity clarity emphasis (source: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025; Jason Barnard, [What actually matters most for your entity home, the page itself, or schema markup?](https://www.linkedin.com/posts/kalicube_entityseo-knowledgepanel-entityhome-activity-7425107363940069376-Rhru), 06.08.2025).
+
+### Example 2: Comparison page structure I would actually use
+
+Use this outline for a page like `Product A vs Product B for remote agencies`:
+
+1. Direct verdict with best-fit summary
+2. Who each product is for
+3. Pricing differences
+4. Integration differences
+5. Setup and onboarding friction
+6. Reporting and permissions
+7. Deal breakers
+8. Migration considerations
+9. Honest recommendation by scenario
+
+Why this structure: it mirrors how buyers and AI systems compare tools, instead of burying the useful parts after 1,500 words of throat clearing. This is supported by Steve Toth's comparison-first approach and Helene Jelenc's emphasis on full-funnel support content (source: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+
+### Example 3: Bad entity description vs good entity description
+
+Bad:
+
+`We are a leading all-in-one platform helping teams unlock growth through AI-powered innovation.`
+
+Good:
+
+`FannyCRM is a CRM for small agency teams that need QuickBooks integration, client-facing permissions, and simple implementation in under 30 days. It is strongest for service businesses. It is not built for enterprise finance teams that need custom ERP workflows.`
+
+Why the rewrite works: it removes category confusion, adds audience clarity, adds exclusion, and gives machines something they can actually use. That matches Jason Barnard's entity-home logic and Marie Haynes's usefulness test (source: Jason Barnard, [Over the last year, AI systems have quietly become your most influential sales team](https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj), 13.02.2026; Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
+
+## Measurement Framework
+
+I do not think "rank tracking but with AI screenshots" is enough. It is too brittle and too easy to misread. My measurement stack would be:
+
+1. Prompt-set tracking: Maintain 30-50 high-value prompts across comparison, alternatives, implementation, integration, pricing, and use-case questions. Re-run them on a schedule and store outputs manually or in a database (source: Lily Ray, [Don't get too excited about AI Overview & AI Mode data appearing in GSC](https://www.linkedin.com/posts/lily-ray-44755615_ai-aimode-seo-activity-7340792082837450752-psb_), 17.06.2025; Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+2. Selection-rate proxy: For each prompt set, calculate how often your brand is mentioned, how often your site is cited, and how often your brand is framed positively or as a fit. This is my practical adaptation of Dan Petrovic's selection-rate idea (source: Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025).
+3. Representation audit: Record whether the system describes you correctly on pricing, ideal customer, integrations, and weaknesses. Being mentioned incorrectly is not a win (source: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Jason Barnard, [Over the last year, AI systems have quietly become your most influential sales team](https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj), 13.02.2026).
+4. Assisted pipeline check: Compare conversion rate, lead quality, and sales velocity of AI/LLM referrals against regular organic traffic instead of dismissing them because volume is smaller (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+5. Evidence freshness audit: Check every quarter whether your most-cited pages still contain current features, proof, and comparisons, because freshness and corroboration appear to matter (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+
+## Where Experts Disagree
+
+### Disagreement 1: Is AI visibility mostly "good SEO" or a distinct discipline?
+
+Author A:
+Marie Haynes argues that good SEO foundations still matter heavily, especially reputation, originality, and trust, even if AI systems add new requirements (source: Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
+
+Author B:
+Helene Jelenc argues that classic rankings and AI visibility overlap far less than many people assume, with low overlap between top organic results and AI Mode appearances (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026; Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.linkedin.com/posts/flow-agency_how-to-work-with-ai-visibility-findings-activity-7436712423350304768-fCbN), 09.03.2026).
+
+My side:
+I side more with Helene, but only slightly. Good SEO is still the foundation. It is just not the whole building anymore. Saying "AI visibility is just SEO" feels lazy. It ignores selection instability, third-party influence, and representation problems.
+
+### Disagreement 2: Should teams focus on traditional Google first or optimize aggressively for AI surfaces now?
+
+Author A:
+Helene Jelenc says that if you had to choose one, keeping traditional Google SEO strong is still the safer base because it is more stable and still increases the chance of AI visibility (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+
+Author B:
+Dan Petrovic and Steve Toth both push toward reframing the problem around selectability, grounding, citation, and buyer-side representation now, not later (source: Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025; Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026).
+
+My side:
+I side with Dan Petrovic and Steve Toth here. Traditional Google still matters, but teams that keep treating AI visibility as a future problem are already late. I would rather over-invest early in comparison pages, deal-breaker pages, entity clarity, and representation controls than spend another year polishing traffic patterns that are getting abstracted away.
+
+### Disagreement 3: How much should AI-generated content be trusted?
+
+Author A (Marie Haynes):
+Marie Haynes is much more cautious and keeps pushing for original insight, firsthand experience, and value that the web would actually miss if removed (source: Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
+
+Author B (Helene Jelenc):
+Helene Jelenc says sophisticated AI content can still appear in AI Overviews if it is useful, and she does not frame AI-written content itself as the real line in the sand (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
+
+My side:
+Overall, I decided to side with Marie Haynes. AI-generated content can work tactically, but if your entire moat is "we generated acceptable filler at scale," that is a terrible long-term bet.
+
+## What I Rejected And Why
+
+1. I rejected the idea that better schema alone is a serious AI visibility strategy. Jason Barnard explicitly treats schema as an enhancer rather than the foundation, and I agree. If the page is vague, schema is not going to save it (source: Jason Barnard, [What actually matters most for your entity home, the page itself, or schema markup?](https://www.linkedin.com/posts/kalicube_entityseo-knowledgepanel-entityhome-activity-7425107363940069376-Rhru), 06.08.2025).
+2. I rejected the idea that teams should double down on generic top-of-funnel publishing to preserve traffic. Steve Toth, Marie Haynes, and Aleyda Solis all point in the opposite direction: specificity, originality, and buyer-relevant content matter more now (source: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025; Aleyda Solis, [Focus on the long tail](https://www.youtube.com/watch?v=8vfoSMqka3A), 02.01.2025).
+3. I rejected the idea that new AI reporting in GSC or similar tools should be treated as precise truth. Lily Ray's warning about noisy, grouped, and potentially misleading AI data is too important to ignore (source: Lily Ray, [Don't get too excited about AI Overview & AI Mode data appearing in GSC](https://www.linkedin.com/posts/lily-ray-44755615_ai-aimode-seo-activity-7340792082837450752-psb_), 17.06.2025).
+
+## My Original Ideas
+
+### Original idea: the "representation brief"
+
+Before writing any major commercial page, create a one-page representation brief that answers:
+
+- what category we want AI systems to place us in
+- what use cases we want associated with us
+- what deal breakers we need to be honest about
+- what competitors we want contrasted against
+- what third-party proof should support those claims
+
+Why I think it could work:
+This idea combines Steve Toth's representation framing, Jason Barnard's entity clarity, and Dan Petrovic's selection logic, but I did not find this exact document concept in my sources. It could work because it forces messaging, proof, and page structure to align before production starts, which should reduce contradiction across the site and off-site mentions (source inspiration: Steve Toth, [The New SEO: How to Win in ChatGPT, Gemini, and AI Search](https://www.youtube.com/watch?v=FMPaKBesM6w), 02.02.2026; Jason Barnard, [Over the last year, AI systems have quietly become your most influential sales team](https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj), 13.02.2026; Dan Petrovic, [AI SEO Deep Dive - Tom Critchlow & Dan Petrovic](https://www.youtube.com/watch?v=-f9QCqTqdTA), 19.11.2025).
+
+## Weaknesses Of This Playbook
+
+1. This playbook assumes B2B SaaS-like buying behavior. Some recommendations may transfer poorly to ecommerce, local businesses, or media sites.
+2. The measurement layer is still a workaround, not a clean science. Selection-rate proxies are useful, but they are not fully standardized.
+3. Some source ideas are strong conceptually but still under-tested in public, especially around memory, chunk-level optimization, and AI-native interaction patterns.
+4. AI systems are changing too fast for false certainty. Any playbook on this topic has a shelf life, including this one.
+5. This playbook is intentionally harsh on generic informational content, and that means it may underweight cases where broad educational content still helps authority, category formation, or assisted conversions. That is a real bias in this document, not a small edge case.
+
+## Who I Would NOT Recommend Following And Why
+
+If I had to choose one of the ten experts that I would not recommend others follow as a primary guide, it would be Metehan Yesilyurt.
+
+That is not because he is useless. He is interesting. The problem is that some of his most memorable ideas are also the least validated. His "memory hacking" and AI-native experimentation mindset is creative, but I would not want a less experienced team to mistake "interesting" for "reliable operating system." I would read him for edge-case ideas, not for the foundation of a team playbook (source: Metehan Yesilyurt, [How AI and AEO are Reshaping SEO](https://www.youtube.com/watch?v=A9gXydf0458), 23.07.2025).
+
+## Final Take
+
+My actual conclusion is pretty simple: most AI-search advice is still too soft, too broad, and too obsessed with being early instead of being useful. The teams that will win are not the ones publishing the most. They are the ones that make themselves easiest to understand, easiest to trust, and easiest to recommend when buyers ask hard, specific questions.
