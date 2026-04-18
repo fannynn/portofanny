@@ -5,22 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="Accessible web companion for the AI Visibility SEO Playbook for B2B SaaS Content Production."
+    content="Interactive web companion for Fanny's Playbook on AI visibility SEO in B2B SaaS content production."
   >
   <title>Fanny's Playbook</title>
   <style>
     :root {
       --bg: #f6efe5;
-      --bg-2: #efe3d4;
+      --bg-2: #ece1d3;
       --panel: #fffaf4;
-      --ink: #1c1814;
+      --ink: #1b1713;
       --muted: #5f554d;
-      --accent: #9c3f22;
-      --accent-2: #6e2b15;
-      --line: #d7c2b0;
-      --shadow: 0 16px 34px rgba(53, 32, 18, 0.08);
+      --accent: #a24323;
+      --accent-2: #6f2b16;
+      --accent-soft: #f4dfd3;
+      --line: #d8c4b3;
+      --ok: #235f43;
+      --warn: #8a5f12;
+      --shadow: 0 18px 36px rgba(57, 33, 17, 0.08);
       --focus: #0f5fff;
-      --max: 1100px;
+      --max: 1180px;
     }
 
     * {
@@ -37,7 +40,7 @@
       color: var(--ink);
       line-height: 1.65;
       background:
-        radial-gradient(circle at top left, rgba(228, 169, 133, 0.38), transparent 26%),
+        radial-gradient(circle at top left, rgba(228, 169, 133, 0.35), transparent 24%),
         linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
     }
 
@@ -51,23 +54,24 @@
 
     a:focus-visible,
     button:focus-visible,
+    input:focus-visible,
     summary:focus-visible {
       outline: 3px solid var(--focus);
       outline-offset: 3px;
-      border-radius: 6px;
+      border-radius: 8px;
     }
 
     .skip-link {
       position: absolute;
       left: 12px;
-      top: -48px;
+      top: -50px;
       background: #ffffff;
       color: #000000;
       padding: 10px 14px;
       border-radius: 10px;
       box-shadow: var(--shadow);
-      z-index: 100;
       text-decoration: none;
+      z-index: 100;
     }
 
     .skip-link:focus {
@@ -75,25 +79,24 @@
     }
 
     .shell {
-      width: min(var(--max), calc(100% - 32px));
+      width: min(var(--max), calc(100% - 28px));
       margin: 0 auto;
-      padding: 28px 0 72px;
+      padding: 26px 0 72px;
     }
 
     .topbar {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      align-items: center;
       gap: 16px;
-      margin-bottom: 20px;
-      padding: 12px 0;
+      margin-bottom: 18px;
     }
 
     .topbar-title {
       margin: 0;
-      font-size: 0.95rem;
-      letter-spacing: 0.06em;
       text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.92rem;
       color: var(--muted);
     }
 
@@ -103,27 +106,37 @@
       gap: 10px;
     }
 
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      text-decoration: none;
+    .pill,
+    .tab-button,
+    .choice-button,
+    .reset-button {
       border: 1px solid var(--line);
-      background: rgba(255, 250, 244, 0.82);
+      background: rgba(255, 250, 244, 0.86);
       color: var(--ink);
       border-radius: 999px;
-      padding: 8px 14px;
-      font-size: 0.92rem;
+      padding: 10px 14px;
+      font: inherit;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .pill:hover,
+    .tab-button:hover,
+    .choice-button:hover,
+    .reset-button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
     }
 
     .hero {
       border: 1px solid var(--line);
       background:
-        linear-gradient(135deg, rgba(156, 63, 34, 0.14), rgba(255, 250, 244, 0.92)),
+        linear-gradient(135deg, rgba(162, 67, 35, 0.14), rgba(255, 250, 244, 0.92)),
         var(--panel);
       border-radius: 30px;
       box-shadow: var(--shadow);
       padding: 34px;
-      margin-bottom: 24px;
+      margin-bottom: 22px;
     }
 
     .eyebrow {
@@ -137,9 +150,9 @@
 
     h1 {
       margin: 0 0 14px;
-      font-size: clamp(2.2rem, 4.2vw, 4rem);
+      font-size: clamp(2.2rem, 4.4vw, 4.2rem);
       line-height: 1.02;
-      max-width: 11ch;
+      max-width: 10ch;
     }
 
     .hero-copy {
@@ -149,7 +162,9 @@
       margin: 0 0 18px;
     }
 
-    .badge-row {
+    .badge-row,
+    .choice-grid,
+    .tab-list {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -165,8 +180,8 @@
 
     .layout {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 310px;
-      gap: 20px;
+      grid-template-columns: minmax(0, 1fr) 320px;
+      gap: 18px;
       align-items: start;
     }
 
@@ -194,13 +209,13 @@
     }
 
     .panel h3 {
-      margin: 18px 0 10px;
-      font-size: 1.15rem;
+      margin: 16px 0 10px;
+      font-size: 1.12rem;
     }
 
-    .lede {
+    .lede,
+    .muted {
       color: var(--muted);
-      margin-top: 0;
     }
 
     .card-grid {
@@ -209,20 +224,12 @@
       gap: 14px;
     }
 
-    .mini-card {
+    .mini-card,
+    .result-card {
       background: #fffdf9;
       border: 1px solid var(--line);
       border-radius: 20px;
       padding: 18px;
-    }
-
-    .mini-card h3 {
-      margin-top: 0;
-    }
-
-    .mini-card p {
-      margin-bottom: 0;
-      color: var(--muted);
     }
 
     ul,
@@ -297,14 +304,124 @@
       content: "-";
     }
 
+    .choice-button[data-selected="true"],
+    .tab-button[aria-selected="true"] {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff7f2;
+    }
+
+    .choice-button {
+      flex: 1 1 180px;
+      text-align: left;
+      border-radius: 20px;
+      padding: 16px;
+    }
+
+    .choice-button span {
+      display: block;
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .choice-button[data-selected="true"] span {
+      color: rgba(255, 247, 242, 0.86);
+    }
+
+    .tab-panel {
+      display: none;
+      margin-top: 16px;
+    }
+
+    .tab-panel.is-active {
+      display: block;
+    }
+
+    .audit-grid {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .audit-item {
+      display: grid;
+      grid-template-columns: 28px 1fr;
+      gap: 12px;
+      align-items: start;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fffdf9;
+    }
+
+    .audit-item input {
+      margin-top: 4px;
+      width: 18px;
+      height: 18px;
+    }
+
+    .audit-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .result-card {
+      margin-top: 16px;
+      background: linear-gradient(180deg, #fffdf9 0%, #fdf5ee 100%);
+    }
+
+    .result-label {
+      margin: 0 0 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .result-title {
+      margin: 0 0 10px;
+      font-size: 1.25rem;
+    }
+
+    .score-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 0;
+    }
+
+    .score-chip {
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.86rem;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .score-chip.good {
+      color: var(--ok);
+      border-color: rgba(35, 95, 67, 0.25);
+      background: rgba(35, 95, 67, 0.08);
+    }
+
+    .score-chip.warn {
+      color: var(--warn);
+      border-color: rgba(138, 95, 18, 0.25);
+      background: rgba(138, 95, 18, 0.08);
+    }
+
+    .score-chip.hot {
+      color: #8d1f1f;
+      border-color: rgba(141, 31, 31, 0.25);
+      background: rgba(141, 31, 31, 0.08);
+    }
+
     .sidebar {
       position: sticky;
       top: 18px;
-    }
-
-    .sidebar h2 {
-      margin-top: 0;
-      font-size: 1.1rem;
     }
 
     .toc {
@@ -320,14 +437,6 @@
     .toc a {
       text-decoration: none;
       color: var(--ink);
-    }
-
-    .toc a:hover {
-      color: var(--accent);
-    }
-
-    .muted {
-      color: var(--muted);
     }
 
     .footer {
@@ -348,7 +457,7 @@
 
     @media (max-width: 640px) {
       .shell {
-        width: min(var(--max), calc(100% - 20px));
+        width: min(var(--max), calc(100% - 18px));
       }
 
       .hero,
@@ -371,20 +480,19 @@
       <p class="topbar-title">Fanny's Playbook</p>
       <nav class="topbar-nav" aria-label="Quick actions">
         <a class="pill" href="#overview">Overview</a>
-        <a class="pill" href="#workflow">Workflow</a>
+        <a class="pill" href="#tool">Tool</a>
         <a class="pill" href="#examples">Examples</a>
-        <a class="pill" href="#measurement">Measurement</a>
         <a class="pill" href="#sources">Sources</a>
       </nav>
     </header>
 
     <section class="hero" aria-labelledby="page-title">
-      <p class="eyebrow">Research Project</p>
+      <p class="eyebrow">Interactive Research Project</p>
       <h1 id="page-title">Fanny's Playbook</h1>
       <p class="hero-copy">
-        This is the web companion to my playbook for
-        <strong>AI visibility SEO in B2B SaaS content production</strong>. It keeps the main ideas easier to skim,
-        easier to navigate, and easier to show as a portfolio extra without replacing the full cited document.
+        This is the interactive web version of my playbook for
+        <strong>AI visibility SEO in B2B SaaS content production</strong>.
+        It is built to be used, not just read.
       </p>
       <div class="badge-row" aria-label="Topic tags">
         <span class="badge">AI Visibility</span>
@@ -413,26 +521,132 @@
               <p>Generic top-of-funnel filler, vague positioning, and dashboards pretending noisy AI data is clean truth.</p>
             </article>
             <article class="mini-card">
-              <h3>Main bias of the playbook</h3>
-              <p>It is intentionally harsher on generic informational content than many SEO teams will be comfortable with.</p>
+              <h3>Main bias</h3>
+              <p>This playbook is intentionally harsher on generic informational content than many SEO teams will be comfortable with.</p>
             </article>
           </div>
         </section>
 
-        <section id="workflow" class="panel" aria-labelledby="workflow-title">
-          <h2 id="workflow-title">Operational Workflow</h2>
-          <ol>
-            <li>Map buyer deal breakers, follow-up questions, and comparison prompts before touching keyword expansion.</li>
-            <li>Fix entity clarity before scaling content. If the company is fuzzy, more content just creates more fuzzy material.</li>
-            <li>Write pages that survive chunking and citation. Important sections should still work when extracted from the page.</li>
-            <li>Prioritize comparison pages, alternatives pages, integration pages, and proof pages over generic awareness filler.</li>
-            <li>Build briefs from mined inputs like reviews, objections, support docs, and winning competitor patterns instead of starting from blank prompts.</li>
-            <li>Diversify beyond your own site with review platforms, video, podcasts, and stronger third-party mentions.</li>
-            <li>Measure mention rate, citation rate, recommendation rate, and representation quality separately.</li>
-          </ol>
-          <p class="quote">
-            If a team still treats AI visibility as a future problem, it is already late.
+        <section id="tool" class="panel" aria-labelledby="tool-title">
+          <h2 id="tool-title">Interactive Playbook Tool</h2>
+          <p class="lede">
+            Pick your current priority, then run the self-audit. The tool will point you to the biggest likely gap first.
           </p>
+
+          <h3>1. Choose your focus</h3>
+          <div class="choice-grid" id="focus-choices" aria-label="Choose your focus">
+            <button class="choice-button" data-focus="strategy" data-selected="true" type="button">
+              Strategy
+              <span>I need the clearest direction and strongest next move.</span>
+            </button>
+            <button class="choice-button" data-focus="content" type="button">
+              Content
+              <span>I need better page types, better structure, and better examples.</span>
+            </button>
+            <button class="choice-button" data-focus="measurement" type="button">
+              Measurement
+              <span>I need to know what to track without fooling myself.</span>
+            </button>
+            <button class="choice-button" data-focus="positioning" type="button">
+              Positioning
+              <span>I need AI systems to understand and describe the brand correctly.</span>
+            </button>
+          </div>
+
+          <div class="result-card" id="focus-result" aria-live="polite">
+            <p class="result-label">Current focus</p>
+            <h3 class="result-title">Strategy</h3>
+            <p id="focus-copy">Start by mapping buyer deal breakers, then prioritize commercial page types before generic informational content.</p>
+          </div>
+
+          <h3>2. Run the self-audit</h3>
+          <div class="audit-grid" id="audit-grid">
+            <label class="audit-item">
+              <input type="checkbox" data-score="content">
+              <span><strong>We already have comparison or alternatives pages.</strong><br>Not generic explainers. Real pages buyers can use to narrow options.</span>
+            </label>
+            <label class="audit-item">
+              <input type="checkbox" data-score="positioning">
+              <span><strong>Our homepage and key pages clearly define category, audience, and who we are not for.</strong><br>No vague all-in-one nonsense.</span>
+            </label>
+            <label class="audit-item">
+              <input type="checkbox" data-score="content">
+              <span><strong>Important sections still make sense when quoted out of context.</strong><br>The page does not hide the useful part at the bottom.</span>
+            </label>
+            <label class="audit-item">
+              <input type="checkbox" data-score="measurement">
+              <span><strong>We track mentions, citations, and recommendations separately.</strong><br>Not everything gets thrown into one fake “AI visibility” bucket.</span>
+            </label>
+            <label class="audit-item">
+              <input type="checkbox" data-score="positioning">
+              <span><strong>Our off-site profiles and review mentions reinforce the same positioning.</strong><br>AI systems are not being forced to reconcile five different brand stories.</span>
+            </label>
+            <label class="audit-item">
+              <input type="checkbox" data-score="strategy">
+              <span><strong>We build from objections, deal breakers, and follow-up questions before keyword tools.</strong><br>Buyer logic comes before spreadsheet logic.</span>
+            </label>
+          </div>
+
+          <div class="audit-actions">
+            <button class="reset-button" id="evaluate-button" type="button">Evaluate my biggest gap</button>
+            <button class="reset-button" id="reset-button" type="button">Reset audit</button>
+          </div>
+
+          <div class="result-card" id="audit-result" aria-live="polite">
+            <p class="result-label">Audit result</p>
+            <h3 class="result-title">Start with positioning clarity</h3>
+            <p id="audit-copy">If AI systems are fuzzy about what the company is, more content just creates more fuzzy material. Fix category, audience, and exclusions first.</p>
+            <div class="score-line" id="score-line">
+              <span class="score-chip hot">Positioning: weak</span>
+              <span class="score-chip warn">Measurement: partial</span>
+              <span class="score-chip warn">Content: partial</span>
+              <span class="score-chip good">Strategy: stronger</span>
+            </div>
+          </div>
+
+          <h3>3. Use the quick views</h3>
+          <div class="tab-list" role="tablist" aria-label="Playbook views">
+            <button class="tab-button" id="tab-strategy" role="tab" aria-selected="true" aria-controls="panel-strategy" type="button">Strategy</button>
+            <button class="tab-button" id="tab-examples" role="tab" aria-selected="false" aria-controls="panel-examples" type="button">Examples</button>
+            <button class="tab-button" id="tab-metrics" role="tab" aria-selected="false" aria-controls="panel-metrics" type="button">Measurement</button>
+            <button class="tab-button" id="tab-skepticism" role="tab" aria-selected="false" aria-controls="panel-skepticism" type="button">Judgment</button>
+          </div>
+
+          <section class="tab-panel is-active" id="panel-strategy" role="tabpanel" aria-labelledby="tab-strategy">
+            <ul>
+              <li>Build from deal breakers, not generic keyword buckets.</li>
+              <li>Fix entity clarity before scaling production.</li>
+              <li>Prioritize comparison, alternatives, integration, and proof pages.</li>
+              <li>Treat AI visibility as a current commercial problem, not a future curiosity.</li>
+            </ul>
+          </section>
+
+          <section class="tab-panel" id="panel-examples" role="tabpanel" aria-labelledby="tab-examples">
+            <ul>
+              <li>Bad chunk: polished but empty platform language.</li>
+              <li>Good chunk: explicit audience, use case, integration, and exclusion.</li>
+              <li>Bad entity line: “leading all-in-one platform”.</li>
+              <li>Good entity line: category, buyer, strengths, and who it is not for.</li>
+            </ul>
+          </section>
+
+          <section class="tab-panel" id="panel-metrics" role="tabpanel" aria-labelledby="tab-metrics">
+            <ul>
+              <li>Mention rate: how often the brand appears.</li>
+              <li>Citation rate: how often a page or domain is used as a source.</li>
+              <li>Recommendation rate: how often the brand is framed as a fit.</li>
+              <li>Representation audit: whether the system describes the company correctly.</li>
+            </ul>
+          </section>
+
+          <section class="tab-panel" id="panel-skepticism" role="tabpanel" aria-labelledby="tab-skepticism">
+            <ul>
+              <li>Reject schema-only thinking.</li>
+              <li>Reject blind trust in AI reporting dashboards.</li>
+              <li>Reject the idea that AI visibility is just old SEO with a new label.</li>
+              <li>Follow experimental voices carefully, not blindly.</li>
+            </ul>
+          </section>
         </section>
 
         <section id="examples" class="panel" aria-labelledby="examples-title">
@@ -464,65 +678,10 @@
           </div>
         </section>
 
-        <section id="measurement" class="panel" aria-labelledby="measurement-title">
-          <h2 id="measurement-title">Measurement That Is Not Fake</h2>
-          <p class="lede">
-            “Rank tracking but with AI screenshots” is not enough. It is brittle, easy to overread, and usually too shallow.
-          </p>
-          <div class="card-grid">
-            <article class="mini-card">
-              <h3>Mention rate</h3>
-              <p>How often the brand appears at all across a prompt set.</p>
-            </article>
-            <article class="mini-card">
-              <h3>Citation rate</h3>
-              <p>How often a page or domain is used as a source.</p>
-            </article>
-            <article class="mini-card">
-              <h3>Recommendation rate</h3>
-              <p>How often the brand is framed as a fit rather than just named.</p>
-            </article>
-            <article class="mini-card">
-              <h3>Representation audit</h3>
-              <p>Whether the system describes pricing, ICP, strengths, and weaknesses correctly.</p>
-            </article>
-          </div>
-        </section>
-
-        <section id="judgment" class="panel" aria-labelledby="judgment-title">
-          <h2 id="judgment-title">Judgment Calls</h2>
-
-          <details open>
-            <summary>What this playbook rejects</summary>
-            <ul>
-              <li>Schema-only thinking as a serious AI visibility strategy.</li>
-              <li>Generic top-of-funnel production as the default growth plan.</li>
-              <li>Blind trust in new AI reporting layers that still group messy data together.</li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Where it takes a side</summary>
-            <ul>
-              <li>AI visibility is not just old SEO with a fresh label.</li>
-              <li>Teams should invest in AI-sensitive commercial content now, not later.</li>
-              <li>AI-generated filler can work tactically, but it is a weak long-term moat.</li>
-            </ul>
-          </details>
-
-          <details>
-            <summary>Who to follow cautiously</summary>
-            <p>
-              Metehan Yesilyurt is interesting, but some of his most memorable ideas feel more experimental than validated.
-              Useful for edge-case inspiration, not the safest foundation for a team operating system.
-            </p>
-          </details>
-        </section>
-
         <section id="sources" class="panel" aria-labelledby="sources-title">
           <h2 id="sources-title">Source Highlights</h2>
           <p class="lede">
-            This web companion is based on the full cited Markdown playbook. These are the voices that shaped the strongest parts of it.
+            This interactive version is based on the full cited Markdown playbook. These are the voices that shaped the strongest parts of it.
           </p>
           <ul>
             <li><a href="https://www.youtube.com/watch?v=-f9QCqTqdTA">Dan Petrovic</a> for selection logic, chunking, and why citations, mentions, and recommendations are not the same thing.</li>
@@ -538,20 +697,150 @@
       </main>
 
       <aside class="panel sidebar" aria-labelledby="toc-title">
-        <h2 id="toc-title">On This Page</h2>
+        <h2 id="toc-title">Use This Page</h2>
         <ul class="toc">
-          <li><a href="#overview">Core position</a></li>
-          <li><a href="#workflow">Operational workflow</a></li>
-          <li><a href="#examples">Useful examples</a></li>
-          <li><a href="#measurement">Measurement</a></li>
-          <li><a href="#judgment">Judgment calls</a></li>
-          <li><a href="#sources">Source highlights</a></li>
+          <li><a href="#overview">Start with the core position</a></li>
+          <li><a href="#tool">Run the interactive tool</a></li>
+          <li><a href="#examples">Steal the examples</a></li>
+          <li><a href="#sources">Check the source highlights</a></li>
         </ul>
         <p class="footer">
-          Use this when you want a cleaner portfolio surface. Use the Markdown when you want to show the full cited research.
+          This page is the cleaner, more interactive surface. The Markdown is still the full research document.
         </p>
       </aside>
     </div>
   </div>
+
+  <script>
+    const focusContent = {
+      strategy: {
+        title: "Strategy",
+        copy: "Start by mapping buyer deal breakers, then prioritize commercial page types before generic informational content."
+      },
+      content: {
+        title: "Content",
+        copy: "Start with comparison pages, alternatives pages, and chunk-readable sections that still work when extracted from the page."
+      },
+      measurement: {
+        title: "Measurement",
+        copy: "Stop treating one screenshot as proof. Track mention rate, citation rate, recommendation rate, and representation quality separately."
+      },
+      positioning: {
+        title: "Positioning",
+        copy: "Fix category clarity, audience clarity, and exclusion language first so AI systems stop guessing what the brand is."
+      }
+    };
+
+    const auditPriority = {
+      positioning: {
+        title: "Start with positioning clarity",
+        copy: "If AI systems are fuzzy about what the company is, more content just creates more fuzzy material. Fix category, audience, and exclusions first."
+      },
+      content: {
+        title: "Start with better page types and chunking",
+        copy: "You likely need stronger comparison, alternatives, and proof content before chasing more visibility."
+      },
+      measurement: {
+        title: "Start with cleaner measurement",
+        copy: "Right now you are at risk of mistaking activity for progress. Separate mentions, citations, recommendations, and representation."
+      },
+      strategy: {
+        title: "Start with buyer logic",
+        copy: "Build from deal breakers, objections, and follow-up questions before keyword tools. Spreadsheet logic is not enough anymore."
+      }
+    };
+
+    const focusButtons = document.querySelectorAll(".choice-button");
+    const focusTitle = document.querySelector("#focus-result .result-title");
+    const focusCopy = document.querySelector("#focus-copy");
+
+    focusButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        focusButtons.forEach((item) => item.dataset.selected = "false");
+        button.dataset.selected = "true";
+        const focus = button.dataset.focus;
+        focusTitle.textContent = focusContent[focus].title;
+        focusCopy.textContent = focusContent[focus].copy;
+      });
+    });
+
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabPanels = document.querySelectorAll(".tab-panel");
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        tabButtons.forEach((item) => item.setAttribute("aria-selected", "false"));
+        tabPanels.forEach((panel) => panel.classList.remove("is-active"));
+        button.setAttribute("aria-selected", "true");
+        document.getElementById(button.getAttribute("aria-controls")).classList.add("is-active");
+      });
+    });
+
+    const evaluateButton = document.getElementById("evaluate-button");
+    const resetButton = document.getElementById("reset-button");
+    const auditChecks = document.querySelectorAll("#audit-grid input[type='checkbox']");
+    const auditTitle = document.querySelector("#audit-result .result-title");
+    const auditCopy = document.getElementById("audit-copy");
+    const scoreLine = document.getElementById("score-line");
+
+    function renderScores(scores) {
+      const labels = {
+        strategy: "Strategy",
+        content: "Content",
+        measurement: "Measurement",
+        positioning: "Positioning"
+      };
+
+      scoreLine.innerHTML = "";
+
+      Object.entries(scores).forEach(([key, value]) => {
+        const chip = document.createElement("span");
+        chip.className = "score-chip";
+        let state = "hot";
+        let text = "weak";
+
+        if (value >= 2) {
+          state = "good";
+          text = "stronger";
+        } else if (value === 1) {
+          state = "warn";
+          text = "partial";
+        }
+
+        chip.classList.add(state);
+        chip.textContent = `${labels[key]}: ${text}`;
+        scoreLine.appendChild(chip);
+      });
+    }
+
+    function evaluateAudit() {
+      const scores = {
+        strategy: 0,
+        content: 0,
+        measurement: 0,
+        positioning: 0
+      };
+
+      auditChecks.forEach((check) => {
+        if (check.checked) {
+          scores[check.dataset.score] += 1;
+        }
+      });
+
+      const weakest = Object.entries(scores).sort((a, b) => a[1] - b[1])[0][0];
+      auditTitle.textContent = auditPriority[weakest].title;
+      auditCopy.textContent = auditPriority[weakest].copy;
+      renderScores(scores);
+    }
+
+    evaluateButton.addEventListener("click", evaluateAudit);
+
+    resetButton.addEventListener("click", () => {
+      auditChecks.forEach((check) => {
+        check.checked = false;
+      });
+      evaluateAudit();
+    });
+  </script>
 </body>
 </html>
