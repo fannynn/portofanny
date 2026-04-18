@@ -3,123 +3,282 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Accessible web companion for the AI Visibility SEO Playbook for B2B SaaS Content Production."
+  >
   <title>AI Visibility SEO Playbook</title>
   <style>
     :root {
-      --bg: #f5f0e8;
-      --panel: #fffaf3;
-      --ink: #1f1a17;
-      --muted: #6f6259;
-      --accent: #b24c2c;
-      --accent-soft: #f2d4c7;
-      --line: #dcc8ba;
-      --shadow: 0 18px 40px rgba(57, 33, 17, 0.08);
+      --bg: #f6efe5;
+      --bg-2: #efe3d4;
+      --panel: #fffaf4;
+      --ink: #1c1814;
+      --muted: #5f554d;
+      --accent: #9c3f22;
+      --accent-2: #6e2b15;
+      --line: #d7c2b0;
+      --shadow: 0 16px 34px rgba(53, 32, 18, 0.08);
+      --focus: #0f5fff;
+      --max: 1100px;
     }
 
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
       color: var(--ink);
+      line-height: 1.65;
       background:
-        radial-gradient(circle at top left, #f8e2cf 0, transparent 28%),
-        linear-gradient(180deg, #f7efe6 0%, #f3ece2 100%);
-      line-height: 1.6;
+        radial-gradient(circle at top left, rgba(228, 169, 133, 0.38), transparent 26%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
     }
 
-    .wrap {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 48px 20px 80px;
+    a {
+      color: var(--accent-2);
     }
 
-    .hero {
-      background: linear-gradient(135deg, rgba(178, 76, 44, 0.10), rgba(255, 250, 243, 0.92));
-      border: 1px solid var(--line);
-      border-radius: 28px;
-      padding: 32px;
-      box-shadow: var(--shadow);
-      margin-bottom: 24px;
-    }
-
-    .eyebrow {
+    a:hover {
       color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.78rem;
-      margin: 0 0 10px;
-      font-weight: bold;
     }
 
-    h1 {
-      margin: 0 0 14px;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height: 1.05;
-      max-width: 12ch;
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+      border-radius: 6px;
     }
 
-    .intro {
-      max-width: 64ch;
-      color: var(--muted);
-      font-size: 1.05rem;
-      margin-bottom: 18px;
+    .skip-link {
+      position: absolute;
+      left: 12px;
+      top: -48px;
+      background: #ffffff;
+      color: #000000;
+      padding: 10px 14px;
+      border-radius: 10px;
+      box-shadow: var(--shadow);
+      z-index: 100;
+      text-decoration: none;
     }
 
-    .badge-row {
+    .skip-link:focus {
+      top: 12px;
+    }
+
+    .shell {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 72px;
+    }
+
+    .topbar {
       display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+      padding: 12px 0;
     }
 
-    .badge {
-      background: var(--panel);
+    .topbar-title {
+      margin: 0;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .topbar-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
       border: 1px solid var(--line);
+      background: rgba(255, 250, 244, 0.82);
+      color: var(--ink);
       border-radius: 999px;
       padding: 8px 14px;
       font-size: 0.92rem;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-      margin: 26px 0;
+    .hero {
+      border: 1px solid var(--line);
+      background:
+        linear-gradient(135deg, rgba(156, 63, 34, 0.14), rgba(255, 250, 244, 0.92)),
+        var(--panel);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      padding: 34px;
+      margin-bottom: 24px;
     }
 
-    .card {
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.2rem, 4.2vw, 4rem);
+      line-height: 1.02;
+      max-width: 11ch;
+    }
+
+    .hero-copy {
+      max-width: 64ch;
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0 0 18px;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .badge {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.76);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.92rem;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 310px;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .stack {
+      display: grid;
+      gap: 16px;
+    }
+
+    .panel {
       background: var(--panel);
       border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 22px;
+      border-radius: 24px;
+      padding: 24px;
       box-shadow: var(--shadow);
     }
 
-    .card h2 {
-      margin-top: 0;
-      font-size: 1.2rem;
+    .panel h2,
+    .panel h3 {
+      line-height: 1.15;
     }
 
-    .card p {
+    .panel h2 {
+      margin: 0 0 14px;
+      font-size: 1.55rem;
+    }
+
+    .panel h3 {
+      margin: 18px 0 10px;
+      font-size: 1.15rem;
+    }
+
+    .lede {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .mini-card {
+      background: #fffdf9;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px;
+    }
+
+    .mini-card h3 {
+      margin-top: 0;
+    }
+
+    .mini-card p {
       margin-bottom: 0;
       color: var(--muted);
     }
 
-    details {
-      background: var(--panel);
+    ul,
+    ol {
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .quote {
+      border-left: 4px solid var(--accent);
+      padding-left: 14px;
+      color: var(--muted);
+      font-style: italic;
+      margin: 0;
+    }
+
+    .example {
+      background: #fffdf9;
       border: 1px solid var(--line);
-      border-radius: 20px;
-      padding: 18px 20px;
-      margin-bottom: 14px;
-      box-shadow: var(--shadow);
+      border-radius: 18px;
+      padding: 16px 18px;
+    }
+
+    .example + .example {
+      margin-top: 12px;
+    }
+
+    .example strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    code {
+      font-family: Consolas, monospace;
+      background: #f3e3d7;
+      border-radius: 6px;
+      padding: 2px 6px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      background: #fffdf9;
+      border-radius: 18px;
+      padding: 14px 16px;
+    }
+
+    details + details {
+      margin-top: 12px;
     }
 
     summary {
       cursor: pointer;
       font-weight: bold;
-      color: var(--ink);
       list-style: none;
     }
 
@@ -129,110 +288,270 @@
 
     summary::before {
       content: "+";
+      display: inline-block;
+      width: 1.2rem;
       color: var(--accent);
-      font-weight: bold;
-      margin-right: 10px;
     }
 
     details[open] summary::before {
       content: "-";
     }
 
-    ul {
-      padding-left: 20px;
+    .sidebar {
+      position: sticky;
+      top: 18px;
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    .toc {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .toc li + li {
+      margin-top: 10px;
+    }
+
+    .toc a {
+      text-decoration: none;
+      color: var(--ink);
+    }
+
+    .toc a:hover {
+      color: var(--accent);
+    }
+
+    .muted {
+      color: var(--muted);
     }
 
     .footer {
-      margin-top: 28px;
+      margin-top: 18px;
+      font-size: 0.94rem;
       color: var(--muted);
-      font-size: 0.95rem;
     }
 
-    code {
-      font-family: Consolas, monospace;
-      background: #f4e3d8;
-      padding: 2px 6px;
-      border-radius: 6px;
+    @media (max-width: 920px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        width: min(var(--max), calc(100% - 20px));
+      }
+
+      .hero,
+      .panel {
+        padding: 20px;
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <section class="hero">
-      <p class="eyebrow">Bonus Viewer</p>
-      <h1>AI Visibility SEO Playbook</h1>
-      <p class="intro">
-        This is a lightweight interactive companion to the Markdown playbook. It is meant to make the
-        structure easier to skim, not replace the full cited document.
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="shell">
+    <header class="topbar" aria-label="Page header">
+      <p class="topbar-title">Accessible Playbook Companion</p>
+      <nav class="topbar-nav" aria-label="Quick actions">
+        <a class="pill" href="#overview">Overview</a>
+        <a class="pill" href="#workflow">Workflow</a>
+        <a class="pill" href="#examples">Examples</a>
+        <a class="pill" href="#measurement">Measurement</a>
+        <a class="pill" href="#sources">Sources</a>
+      </nav>
+    </header>
+
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Bonus Web Version</p>
+      <h1 id="page-title">AI Visibility SEO Playbook</h1>
+      <p class="hero-copy">
+        This is the web companion to the Markdown playbook for
+        <strong>B2B SaaS content production</strong>. It keeps the main ideas easier to skim,
+        easier to navigate, and easier to show as a portfolio extra without replacing the full cited document.
       </p>
-      <div class="badge-row">
-        <span class="badge">B2B SaaS</span>
+      <div class="badge-row" aria-label="Topic tags">
         <span class="badge">AI Visibility</span>
-        <span class="badge">SEO Content Production</span>
+        <span class="badge">SEO</span>
+        <span class="badge">B2B SaaS</span>
+        <span class="badge">Content Production</span>
         <span class="badge">Research-Driven</span>
       </div>
     </section>
 
-    <section class="grid">
-      <article class="card">
-        <h2>Core thesis</h2>
-        <p>Stop optimizing only for ranking. Optimize for being selected, cited, and represented correctly.</p>
-      </article>
-      <article class="card">
-        <h2>What matters most</h2>
-        <p>Deal breakers, entity clarity, comparison content, proof assets, and measurement that goes past clicks.</p>
-      </article>
-      <article class="card">
-        <h2>What dies first</h2>
-        <p>Generic top-of-funnel filler, vague positioning, and fake confidence from messy AI reporting.</p>
-      </article>
-    </section>
+    <div class="layout">
+      <main id="main-content" class="stack" tabindex="-1">
+        <section id="overview" class="panel" aria-labelledby="overview-title">
+          <h2 id="overview-title">Core Position</h2>
+          <p class="lede">
+            The useful shift is not “how do I rank one more page?” It is “how do I become easy for AI systems
+            to understand, cite, and recommend when buyers ask specific questions?”
+          </p>
+          <div class="card-grid">
+            <article class="mini-card">
+              <h3>What matters now</h3>
+              <p>Deal breakers, entity clarity, comparison content, proof assets, and representation quality.</p>
+            </article>
+            <article class="mini-card">
+              <h3>What dies first</h3>
+              <p>Generic top-of-funnel filler, vague positioning, and dashboards pretending noisy AI data is clean truth.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Main bias of the playbook</h3>
+              <p>It is intentionally harsher on generic informational content than many SEO teams will be comfortable with.</p>
+            </article>
+          </div>
+        </section>
 
-    <details open>
-      <summary>Operational steps</summary>
-      <ul>
-        <li>Map buyer deal breakers and follow-up questions before keyword expansion.</li>
-        <li>Fix entity clarity before scaling production.</li>
-        <li>Write pages that survive chunking and citation.</li>
-        <li>Prioritize comparison, alternatives, integration, and proof pages.</li>
-        <li>Build briefs from mined insights instead of blank prompts.</li>
-        <li>Track mentions, citations, and recommendation quality separately.</li>
-      </ul>
-    </details>
+        <section id="workflow" class="panel" aria-labelledby="workflow-title">
+          <h2 id="workflow-title">Operational Workflow</h2>
+          <ol>
+            <li>Map buyer deal breakers, follow-up questions, and comparison prompts before touching keyword expansion.</li>
+            <li>Fix entity clarity before scaling content. If the company is fuzzy, more content just creates more fuzzy material.</li>
+            <li>Write pages that survive chunking and citation. Important sections should still work when extracted from the page.</li>
+            <li>Prioritize comparison pages, alternatives pages, integration pages, and proof pages over generic awareness filler.</li>
+            <li>Build briefs from mined inputs like reviews, objections, support docs, and winning competitor patterns instead of starting from blank prompts.</li>
+            <li>Diversify beyond your own site with review platforms, video, podcasts, and stronger third-party mentions.</li>
+            <li>Measure mention rate, citation rate, recommendation rate, and representation quality separately.</li>
+          </ol>
+          <p class="quote">
+            If a team still treats AI visibility as a future problem, it is already late.
+          </p>
+        </section>
 
-    <details>
-      <summary>Memorable examples</summary>
-      <ul>
-        <li>Bad chunk: vague platform language that says nothing.</li>
-        <li>Good chunk: explicit audience, use case, integration, and exclusion.</li>
-        <li>Bad entity description: “leading all-in-one platform”.</li>
-        <li>Good entity description: category, buyer, strengths, and who it is not for.</li>
-      </ul>
-    </details>
+        <section id="examples" class="panel" aria-labelledby="examples-title">
+          <h2 id="examples-title">Useful Examples</h2>
 
-    <details>
-      <summary>Measurement logic</summary>
-      <ul>
-        <li>Mention rate: how often the brand appears.</li>
-        <li>Citation rate: how often the domain or page is cited.</li>
-        <li>Recommendation rate: how often the brand is framed as a fit.</li>
-        <li>Representation audit: whether the system describes the company correctly.</li>
-      </ul>
-    </details>
+          <div class="example">
+            <strong>Bad chunk</strong>
+            <p><code>Our CRM platform empowers modern teams with flexible workflows, seamless collaboration, and innovative automation for growing businesses.</code></p>
+            <p class="muted">Too vague. It sounds polished but gives neither buyers nor machines anything concrete to work with.</p>
+          </div>
 
-    <details>
-      <summary>Why the playbook has a stronger point of view</summary>
-      <ul>
-        <li>It takes a side on AI visibility instead of hiding behind “it depends”.</li>
-        <li>It rejects schema-only thinking and generic filler production.</li>
-        <li>It names one expert to treat cautiously instead of pretending all ten are equally reliable.</li>
-      </ul>
-    </details>
+          <div class="example">
+            <strong>Better chunk</strong>
+            <p><code>This CRM is built for agencies with 10-100 staff that need QuickBooks sync, client-level permissions, and pipeline reporting without Salesforce-level setup time.</code></p>
+            <p class="muted">Specific audience, real use case, and clear selection criteria. That is much easier to retrieve and recommend.</p>
+          </div>
 
-    <p class="footer">
-      Use the full cited document in <code>playbook.md</code> as the main deliverable. Use this page and the
-      CLI script as portfolio extras.
-    </p>
+          <div class="example">
+            <strong>Better comparison-page outline</strong>
+            <ol>
+              <li>Direct verdict and best-fit summary</li>
+              <li>Who each product is for</li>
+              <li>Pricing differences</li>
+              <li>Integration differences</li>
+              <li>Onboarding friction</li>
+              <li>Deal breakers</li>
+              <li>Recommendation by scenario</li>
+            </ol>
+          </div>
+        </section>
+
+        <section id="measurement" class="panel" aria-labelledby="measurement-title">
+          <h2 id="measurement-title">Measurement That Is Not Fake</h2>
+          <p class="lede">
+            “Rank tracking but with AI screenshots” is not enough. It is brittle, easy to overread, and usually too shallow.
+          </p>
+          <div class="card-grid">
+            <article class="mini-card">
+              <h3>Mention rate</h3>
+              <p>How often the brand appears at all across a prompt set.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Citation rate</h3>
+              <p>How often a page or domain is used as a source.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Recommendation rate</h3>
+              <p>How often the brand is framed as a fit rather than just named.</p>
+            </article>
+            <article class="mini-card">
+              <h3>Representation audit</h3>
+              <p>Whether the system describes pricing, ICP, strengths, and weaknesses correctly.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="judgment" class="panel" aria-labelledby="judgment-title">
+          <h2 id="judgment-title">Judgment Calls</h2>
+
+          <details open>
+            <summary>What this playbook rejects</summary>
+            <ul>
+              <li>Schema-only thinking as a serious AI visibility strategy.</li>
+              <li>Generic top-of-funnel production as the default growth plan.</li>
+              <li>Blind trust in new AI reporting layers that still group messy data together.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Where it takes a side</summary>
+            <ul>
+              <li>AI visibility is not just old SEO with a fresh label.</li>
+              <li>Teams should invest in AI-sensitive commercial content now, not later.</li>
+              <li>AI-generated filler can work tactically, but it is a weak long-term moat.</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>Who to follow cautiously</summary>
+            <p>
+              Metehan Yesilyurt is interesting, but some of his most memorable ideas feel more experimental than validated.
+              Useful for edge-case inspiration, not the safest foundation for a team operating system.
+            </p>
+          </details>
+        </section>
+
+        <section id="sources" class="panel" aria-labelledby="sources-title">
+          <h2 id="sources-title">Source Highlights</h2>
+          <p class="lede">
+            This web companion is based on the full cited Markdown playbook. These are the voices that shaped the strongest parts of it.
+          </p>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=-f9QCqTqdTA">Dan Petrovic</a> for selection logic, chunking, and why citations, mentions, and recommendations are not the same thing.</li>
+            <li><a href="https://www.youtube.com/watch?v=FMPaKBesM6w">Steve Toth</a> for deal breakers, comparison content, and AI-era buyer journey compression.</li>
+            <li><a href="https://www.youtube.com/watch?v=mbXmbfX6FVo">Marie Haynes</a> for originality, trust, and a much-needed anti-hype filter.</li>
+            <li><a href="https://www.youtube.com/watch?v=JkEjVLnNzBU">Helene Jelenc</a> for AI visibility findings, cross-funnel diversification, and low overlap between classic rankings and AI selection.</li>
+            <li><a href="https://www.linkedin.com/posts/jasonmbarnard_ai-knowledgegraph-brandstrategy-activity-7428079166765436928-qJyj">Jason Barnard</a> for entity clarity, recommendation logic, and brand understanding.</li>
+          </ul>
+          <p class="footer">
+            For the full argument, disagreements, rejections, and citations, the main document is <code>playbook.md</code>.
+          </p>
+        </section>
+      </main>
+
+      <aside class="panel sidebar" aria-labelledby="toc-title">
+        <h2 id="toc-title">On This Page</h2>
+        <ul class="toc">
+          <li><a href="#overview">Core position</a></li>
+          <li><a href="#workflow">Operational workflow</a></li>
+          <li><a href="#examples">Useful examples</a></li>
+          <li><a href="#measurement">Measurement</a></li>
+          <li><a href="#judgment">Judgment calls</a></li>
+          <li><a href="#sources">Source highlights</a></li>
+        </ul>
+        <p class="footer">
+          Use this when you want a cleaner portfolio surface. Use the Markdown when you want to show the full cited research.
+        </p>
+      </aside>
+    </div>
   </div>
 </body>
 </html>
