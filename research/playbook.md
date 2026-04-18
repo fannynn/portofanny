@@ -281,7 +281,7 @@ Why I would ship this first:
 - fastest path to shortlist inclusion because it adds ICP, exclusions, and concrete proof signals in one block
 - easier to reuse across LinkedIn, review profiles, and comparison pages so representation stays consistent
 
-Sample comparison table I would add to a `FannyCRM vs HubSpot for agencies` page:
+Example comparison table I would add to a `FannyCRM vs HubSpot for agencies` page:
 
 | Criteria | FannyCRM | HubSpot |
 | --- | --- | --- |
@@ -444,10 +444,10 @@ I side with Dan Petrovic and Steve Toth here. Traditional Google still matters, 
 
 ### Disagreement 3: How much should AI-generated content be trusted?
 
-Author A (Marie Haynes):
+Author A :
 Marie Haynes is much more cautious and keeps pushing for original insight, firsthand experience, and value that the web would actually miss if removed (source: Marie Haynes, [AI & Search: What SEOs Need to Know (and Do) Right Now](https://www.youtube.com/watch?v=mbXmbfX6FVo), 28.03.2025).
 
-Author B (Helene Jelenc):
+Author B :
 Helene Jelenc says sophisticated AI content can still appear in AI Overviews if it is useful, and she does not frame AI-written content itself as the real line in the sand (source: Helene Jelenc, [How to work with AI visibility - findings from AI test](https://www.youtube.com/watch?v=JkEjVLnNzBU), transcript collected 15.04.2026).
 
 My side:
