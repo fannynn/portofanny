@@ -1,6 +1,7 @@
 # AI Visibility SEO Playbook for B2B SaaS Content Production
 
 Author : Fanny Nabiilah
+
 Created at: April 2026
 
 This is my operating playbook for AI visibility SEO in B2B SaaS content production. The core shift is simple: the real problem is no longer "how do I rank a page?" but "how do I become easy to select, cite, and describe correctly when AI systems compress a buying journey into one conversation?"
